@@ -1,0 +1,61 @@
+@use "../abstracts" as *;
+
+@mixin features-title-vertical-space {
+  margin-top: rem(48);
+  margin-bottom: rem(32);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: rem(80);
+  text-align: center;
+
+  @include breakpoint-up("tiny") {
+    gap: rem(30);
+    text-align: left;
+  }
+
+  @include breakpoint-up("very-small") {
+    flex-direction: row;
+    text-align: center;
+  }
+}
+
+.features__title {
+  @include features-title-vertical-space;
+
+  @include breakpoint-up("tiny") {
+    margin-top: 0;
+    margin-bottom: rem(16);
+  }
+
+  @include breakpoint-up("very-small") {
+    @include features-title-vertical-space;
+  }
+}
+
+.features__item {
+  display: grid;
+  flex-grow: 1;
+  justify-items: center;
+
+  @include breakpoint-up("tiny") {
+    grid-template-columns: minmax(rem(200), 25%) 1fr;
+    align-items: center;
+  }
+
+  @include breakpoint-up("very-small") {
+    grid-template-columns: initial;
+  }
+}
+
+.features__container {
+  @include breakpoint-up("tiny") {
+    margin-left: rem(48);
+  }
+
+  @include breakpoint-up("very-small") {
+    margin-left: 0;
+  }
+}

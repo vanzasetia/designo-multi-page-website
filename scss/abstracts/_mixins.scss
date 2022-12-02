@@ -1,0 +1,50 @@
+@use "variables" as *;
+@use "functions" as *;
+
+@mixin focus-styling($color) {
+  outline: rem(3) solid $color;
+  outline-offset: rem(5);
+}
+
+@mixin focus($color) {
+  &:focus {
+    @include focus-styling($color);
+  }
+}
+
+@mixin hover {
+  @media (hover: none) {
+    -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+
+    &:active {
+      @content;
+    }
+  }
+
+  @media (-ms-high-contrast: none),
+    (-ms-high-contrast: active),
+    (-moz-touch-enabled: 0),
+    (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin breakpoint-up($size) {
+  @media screen and (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media screen and (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+@mixin prefers-motion {
+  @media (prefers-reduced-motion: no-preference) {
+    @content;
+  }
+}

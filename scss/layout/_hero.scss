@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.hero__container {
+  @include breakpoint-up("very-small") {
+    max-width: rem(500);
+  }
+}
+
+.hero__description {
+  margin-top: rem(26);
+  margin-bottom: var(--space-2xs);
+}

@@ -1,0 +1,28 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "allowed-links": [
+      "error",
+      {
+        "allowExternal": true,
+        "allowRelative": false,
+        "allowAbsolute": true,
+        "allowBase": false
+      }
+    ],
+    "void-style": ["error", { "style": "selfclosing" }],
+    "heading-level": [
+      "error",
+      {
+        "allowMultipleH1": false,
+        "minInitialRank": "h1"
+      }
+    ],
+    "no-redundant-role": ["warn"],
+    "no-raw-characters": ["off"],
+    "input-missing-label": ["error"],
+    "missing-doctype": ["error"],
+    "no-missing-references": ["error"],
+    "svg-focusable": ["error"]
+  }
+}

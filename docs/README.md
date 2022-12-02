@@ -1,0 +1,71 @@
+# Documentation
+
+[(Back to home)](https://github.com/vanzasetia/designo-multi-page-website#readme)
+
+## Table of contents
+
+- [Overview](#overview)
+- [References](#references)
+  - [Web Documentation](#web-documentation)
+  - [Articles](#articles)
+  - [Tools](#tools)
+  - [Validation](#validation)
+  - [Others](#others)
+
+## Overview
+
+This is the place where I put all the resources that I find useful to build this project. This can be used for future reference or help anyone that is doing this challenge.
+
+## References
+
+### Web Documentation
+
+- [`<footer>` - HTML: HyperText Markup Language | MDN #accessibility_concerns](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#accessibility_concerns) - Prior to the release of Safari 13, the `contentinfo` [landmark role](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics#signpostslandmarks) was not properly exposed by [VoiceOver](https://help.apple.com/voiceover/info/guide/). If needing to support legacy Safari browsers, add `role="contentinfo"` to the footer element to ensure the landmark will be properly exposed.
+- [HTML Standard #the-address-element](https://html.spec.whatwg.org/multipage/sections.html#the-address-element) - The `address` element must not be used to represent arbitrary addresses (e.g. postal addresses), unless those addresses are in fact the relevant contact information. (The `p` element is the appropriate element for marking up postal addresses in general.)
+- [HTMLElement.inert - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inert) - The [`HTMLElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) property `inert` is a boolean value that, when present, makes the browser "ignore" user input events for the element, including focus events and events from assistive technologies.
+- [HTML Standard #the-inert-attribute](https://html.spec.whatwg.org/multipage/interaction.html#the-inert-attribute)
+- [Attribute selectors - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+- [General sibling combinator - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator)
+- [Window.matchMedia() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia)
+
+### Articles
+
+- [Contextually Marking up accessible images and SVGs](https://www.scottohara.me/blog/2019/05/22/contextual-images-svgs-and-a11y.html)
+  - Prior to macOS 10.14.4, `aria-hidden="true"` would also be necessary to completely hide a decorative image to VoiceOver when paired with Chrome. Without the ARIA attribute, VoiceOver would still focus the image, but provide no announcement.
+  - A SVG that does not add important information to a document should be considered decorative. The following markup pattern uses `aria-hidden="true"` to hide the SVG from screen readers. `focusable="false"` is also used to ensure Internet Explorer won’t allow the Tab key to navigate into the SVG.
+- [Ten modern layouts in one line of CSS | web.dev](https://web.dev/one-line-layouts/)
+- [Build a fully-responsive, progressively enhanced burger menu - Piccalilli](https://piccalil.li/tutorial/build-a-fully-responsive-progressively-enhanced-burger-menu/)
+  - We remove focus styles from the `<main>` element because when someone activates the skip link from before, it programatically focuses the `<main>` because it’s the `:target`. The focus ring is unnecessary though, because making the `<main>` focusable, programatically, is purely for making tabbing on the keyboard more predictable for users who want to skip navigation. If we didn’t move focus, they could end up in a situation where hitting the tab key sends them back up the the navigation!
+  - What’s handy with this approach is that using `tabindex="-1"` prevents the user from being able to tab to the element with their keyboard too, so it’s really helpful with focus management of interactive elements, which we’ll get on to later in this tutorial.
+- [Landmark Regions | APG | WAI | W3C](https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/) - If a specific landmark role is used more than once on a page, provide each instance of that landmark with a unique label.
+
+### Tools
+
+- [SVGOMG - SVGO's Missing GUI](https://jakearchibald.github.io/svgomg/) - Optimize icon from IcoMoon.
+- [Canva](https://www.canva.com/) - Design the favicon and other things.
+- [Colorable](https://colorable.jxnblk.com/e7816b/1d1c1e) - Test the color contrast between the icon and the background color for the favicon.
+- [Free Background Image Remover: Remove BG from HD Images Online - Erase.bg](https://www.erase.bg/) - Clear the background color of the favicon.
+- [Favicon Generator for perfect icons on all browsers](https://realfavicongenerator.net/) - Generate different sizes for the favicon.
+- [font-face generator](https://everythingfonts.com/font-face) - Convert `ttf` to `woff` and `woff2`.
+- [Fluid type scale calculator | Utopia (Designo Settings)](https://utopia.fyi/type/calculator/?c=320,28,1.2,1350,40,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l)
+- [Fluid Space Calculator | Utopia (Designo Settings)](https://utopia.fyi/space/calculator/?c=320,80,1.2,1350,140,1.25,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l)
+- [Paraphrasing Tool | QuillBot AI](https://quillbot.com/) - Help me find an idea for the `meta` description for each page.
+- [Grammarly: Free Online Writing Assistant](https://www.grammarly.com/) - Prevent me from doing typo and grammar errors.
+- [Lingva Translate](https://lingva.ml/) - It works the same as [Google Translate](https://translate.google.com/). I used this translate English to Bahasa Indonesia and vice versa.
+- [Meta Tags — Preview, Edit and Generate](https://metatags.io/) - Preview social media cards for the website.
+- [Chicago - Title Capitalization Tool - Capitalize My Title - Title Case Tool](https://capitalizemytitle.com/style/Chicago/)
+
+### Validations
+
+
+### Others
+
+- [Frontend Mentor | Designo multi-page website coding challenge](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT)
+- [Icon Font & SVG Icon Sets ❍ IcoMoon](https://icomoon.io/) - Get an icon for the website's favicon.
+- [Jost - Google Fonts](https://fonts.google.com/specimen/Jost) - The font family of the website.
+- [HTMLElement API: `inert` | Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/mdn-api_htmlelement_inert) - The global support for `inert` attribute is 83.95% by the time I am writing this.
+- [CSS selector: Negation pseudo-class selector (`:not()`) | Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/mdn-css_selectors_not) - The global support for `:not()` pseudo-class selector is 98% by the time I am writing this.
+- [CSS selector: Adjacent sibling combinator (`A + B`) | Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/mdn-css_selectors_adjacent_sibling) - The global support for adjacent sibling combinator (`+`) is 97.54% by the time I am writing this.
+- [1-Line Layouts](http://1linelayouts.glitch.me/) - 10 modern CSS code snippets.
+- [instant.page](https://instant.page/) - Preloaded pages when only there is a good chance that a user will visit them, and only the HTML is preloaded.
+- [WICG/inert](https://github.com/WICG/inert) - Another polyfill for the `inert` attribute and property.

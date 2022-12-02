@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+/**
+ * * INFO: container max-width = 1110 + (padding-left + padding-right)
+ */
+
+@mixin container-padding {
+  padding-right: rem(24);
+  padding-left: rem(24);
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: rem(1158);
+}
+
+.container--padding {
+  @include container-padding;
+}
+
+.container--padding\@tiny {
+  @include breakpoint-up("tiny") {
+    @include container-padding;
+  }
+}

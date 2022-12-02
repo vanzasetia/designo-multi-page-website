@@ -1,0 +1,131 @@
+@use "../abstracts" as *;
+
+.header {
+  position: relative;
+  z-index: 2;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  padding-top: var(--space-s);
+  padding-bottom: var(--space-s);
+}
+
+.header__menu-button {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  width: rem(44);
+  height: rem(44);
+
+  @include breakpoint-up("tiny") {
+    display: none;
+  }
+}
+
+.header__menu-button[aria-expanded="true"] ~ .header__list {
+  transform: translate(0);
+  visibility: visible;
+}
+
+.header__icon {
+  width: 100%;
+}
+
+.header__list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  visibility: hidden;
+  z-index: -1;
+  background-color: var(--dark-grey);
+  padding: rem(180) rem(24) rem(48);
+  width: 100%;
+  color: var(--white);
+  list-style: none;
+
+  @include prefers-motion {
+    transition: visibility var(--transition-base),
+      transform var(--transition-base);
+  }
+
+  @include breakpoint-up("tiny") {
+    display: flex;
+    position: initial;
+    transform: initial;
+    visibility: visible;
+    background-color: initial;
+    padding: 0;
+    color: var(--black);
+  }
+}
+
+.header__item:not(:first-child) {
+  margin-top: rem(32);
+
+  @include breakpoint-up("tiny") {
+    margin-top: 0;
+    margin-left: rem(42);
+  }
+}
+
+.header__link {
+  font-size: rem(24);
+
+  @include focus(var(--white));
+
+  @include hover {
+    text-decoration: underline;
+  }
+
+  @include breakpoint-up("tiny") {
+    font-size: inherit;
+
+    @include focus(var(--black));
+  }
+}
+
+.no-js .header__container {
+  flex-direction: column;
+  justify-content: center;
+
+  @include breakpoint-up("tiny") {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.no-js .header__menu-button {
+  display: none;
+}
+
+.no-js .header__list {
+  display: flex;
+  position: initial;
+  flex-wrap: wrap;
+  transform: initial;
+  visibility: visible;
+  margin-top: rem(30);
+  background-color: initial;
+  padding: 0;
+  color: var(--black);
+
+  @include breakpoint-up("tiny") {
+    margin-top: 0;
+  }
+}
+
+.no-js .header__item {
+  margin-top: 0;
+  margin-left: rem(30);
+}
+
+.no-js .header__link {
+  font-size: inherit;
+
+  @include focus(var(--black));
+}

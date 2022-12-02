@@ -1,0 +1,23 @@
+{
+  "name": "Craft Designs That Make Real Impact - Designo",
+  "short_name": "Designo",
+  "description": "Are you ready to take your business to the next level? Good, because that's what we're here to help you do.",
+  "start_url": "/",
+  "theme_color": "#e7816b",
+  "background_color": "#e7816b",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicons/icon-large.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    },
+    {
+      "src": "/favicons/icon-large-maskable.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
+    }
+  ]
+}

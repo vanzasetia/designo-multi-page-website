@@ -1,0 +1,23 @@
+/* MYSELF */
+Coder: Vanza Setia
+Contact: venusbumi2 [at] gmail.com
+Twitter: @vanzasetia
+GitHub: https://github.com/vanzasetia
+From: Bandar Lampung, Lampung, Indonesia
+
+/* THANKS */
+UI Design: Frontend Mentor
+Website: https://www.frontendmentor.io/
+Twitter: @frontendmentor
+Location: London, England, United Kingdom
+
+Founder of Frontend Mentor: Matt Studdert
+Website: http://mattstuddert.com/
+Twitter: @_mattstuddert
+From: London, England, United Kingdom
+
+/* SITE */
+Last update: 2022/12/08
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code, Windows Terminal, PowerShell

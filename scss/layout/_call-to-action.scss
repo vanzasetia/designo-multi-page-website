@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.call-to-action {
+  padding-top: var(--space-xl);
+  padding-bottom: rem(72);
+}
+
+.call-to-action__container {
+  flex-shrink: 1;
+  flex-basis: rem(450);
+}
+
+.call-to-action__title {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: rem(300);
+
+  @include breakpoint-up("very-small") {
+    margin-right: initial;
+    margin-left: initial;
+  }
+}
+
+.call-to-action__description {
+  margin-top: rem(16);
+  margin-bottom: rem(32);
+}

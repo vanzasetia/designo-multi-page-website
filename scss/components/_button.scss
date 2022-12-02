@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: rem(8);
+  padding: rem(16) rem(24);
+  letter-spacing: rem(1);
+  text-decoration: none;
+
+  @include prefers-motion {
+    transition: background-color var(--transition-base),
+      color var(--transition-base);
+  }
+}
+
+.button--white {
+  background-color: var(--white);
+  color: var(--dark-grey);
+}
+
+.button--peach {
+  background-color: var(--peach);
+  color: var(--white);
+}
+
+.button--peach,
+.button--white {
+  @include hover {
+    background-color: var(--light-peach);
+    color: var(--white);
+  }
+}

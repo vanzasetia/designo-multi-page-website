@@ -1,0 +1,15 @@
+*.md
+
+*.json
+
+scss/abstracts/_variables.scss
+
+js/vendors
+
+images/
+favicons/
+icons/
+
+*.min.*
+
+LICENSE
