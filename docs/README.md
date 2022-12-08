@@ -27,6 +27,7 @@ This is the place where I put all the resources that I find useful to build this
 - [Attribute selectors - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 - [General sibling combinator - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator)
 - [Window.matchMedia() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia)
+- [CSS API update  |  Google Fonts  |  Google Developers #optimizing_your_font_requests](https://developers.google.com/fonts/docs/css2#optimizing_your_font_requests) - Use the `text=` to get necessary bold font.
 
 ### Articles
 
@@ -54,6 +55,7 @@ This is the place where I put all the resources that I find useful to build this
 - [Lingva Translate](https://lingva.ml/) - It works the same as [Google Translate](https://translate.google.com/). I used this translate English to Bahasa Indonesia and vice versa.
 - [Meta Tags — Preview, Edit and Generate](https://metatags.io/) - Preview social media cards for the website.
 - [Chicago - Title Capitalization Tool - Capitalize My Title - Title Case Tool](https://capitalizemytitle.com/style/Chicago/)
+- [Url Encoder - Online Tool](https://www.urlencoder.net/) - Encode the text for the 700 font weight.
 
 ### Validations
 

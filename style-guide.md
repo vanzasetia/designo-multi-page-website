@@ -50,4 +50,6 @@ Font size: 16px
 ### Font
 
 - Family: [Jost](https://fonts.google.com/specimen/Jost)
-- Weights: 400, 500
+- Weights: 400, 500, 700
+
+Jost's 700 font weight URL: [https://fonts.googleapis.com/css2?family=Jost:wght@700&text=Designo%20Central%20Office%20Contact%20Us%20%28Central%20Office%29%20P%20%3A%20%2B1%20253-863-8967%20M%20%3A%20contact%40designo.co%20Designo%20AU%20Designo%20UK%20Office&display=swap](https://fonts.googleapis.com/css2?family=Jost:wght@700&text=Designo%20Central%20Office%20Contact%20Us%20%28Central%20Office%29%20P%20%3A%20%2B1%20253-863-8967%20M%20%3A%20contact%40designo.co%20Designo%20AU%20Designo%20UK%20Office&display=swap)
