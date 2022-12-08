@@ -5,7 +5,7 @@
   <img alt="Repo size" src="https://img.shields.io/github/repo-size/vanzasetia/designo-multi-page-website?style=for-the-badge&logo=github">
   <a href="https://twitter.com/vanzasetia"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter - Vanza Setia" /></a>
   <img alt="Last commit" src="https://img.shields.io/github/last-commit/vanzasetia/designo-multi-page-website?style=for-the-badge&logo=git">
-  <img alt="Netlify" src="https://img.shields.io/netlify/?style=for-the-badge&logo=netlify">
+  <img alt="Netlify" src="https://img.shields.io/netlify/d2056645-4d19-4874-a300-ef1c292ff3a5?style=for-the-badge&logo=netlify">
   <img alt="MIT License" src="https://img.shields.io/github/license/vanzasetia/designo-multi-page-website?color=green&style=for-the-badge&logo=github">
 </p>
 
