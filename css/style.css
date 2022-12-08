@@ -286,6 +286,7 @@ button[type] {
 a {
   background-color: transparent; /* 1 */
   color: inherit;
+  letter-spacing: 0.125rem;
   text-decoration-color: transparent;
 }
 
@@ -905,7 +906,7 @@ audio:not([controls]) {
 
 .footer {
   position: relative;
-  background-color: var(--dark-grey);
+  background-color: var(--black);
   padding-bottom: 4.5rem;
   color: var(--white);
 }
@@ -921,7 +922,7 @@ audio:not([controls]) {
   top: -9rem;
   left: 0;
   z-index: -1;
-  background-color: var(--dark-grey);
+  background-color: var(--black);
   width: 100%;
   height: 100%;
   content: "";
@@ -938,7 +939,7 @@ audio:not([controls]) {
   .footer__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "logo navigation navigation" "contact address social";
+    grid-template-areas: "logo navigation navigation" "address contact social";
     justify-content: flex-start;
     align-items: flex-start;
     gap: 0.625rem;
@@ -1040,6 +1041,7 @@ audio:not([controls]) {
     display: flex;
     grid-area: social;
     justify-content: flex-end;
+    align-self: flex-end;
     margin-top: 0;
   }
 }

@@ -2,7 +2,7 @@
 
 .footer {
   position: relative;
-  background-color: var(--dark-grey);
+  background-color: var(--black);
   padding-bottom: rem(72);
   color: var(--white);
 }
@@ -17,7 +17,7 @@
   top: rem(-144);
   left: 0;
   z-index: -1;
-  background-color: var(--dark-grey);
+  background-color: var(--black);
   width: 100%;
   height: 100%;
   content: "";
@@ -35,7 +35,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "logo navigation navigation"
-      "contact address social";
+      "address contact social";
     justify-content: flex-start;
     align-items: flex-start;
     gap: rem(10);
@@ -123,6 +123,7 @@
     display: flex;
     grid-area: social;
     justify-content: flex-end;
+    align-self: flex-end;
     margin-top: 0;
   }
 }
