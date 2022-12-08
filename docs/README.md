@@ -71,3 +71,4 @@ This is the place where I put all the resources that I find useful to build this
 - [1-Line Layouts](http://1linelayouts.glitch.me/) - 10 modern CSS code snippets.
 - [instant.page](https://instant.page/) - Preloaded pages when only there is a good chance that a user will visit them, and only the HTML is preloaded.
 - [WICG/inert](https://github.com/WICG/inert) - Another polyfill for the `inert` attribute and property.
+- [Be the browser’s mentor, not its micromanager. - Build Excellent Websites](https://buildexcellentwebsit.es/) - I often inspect the website as a guide to build Designo.
