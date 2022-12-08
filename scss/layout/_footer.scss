@@ -11,6 +11,11 @@
   @include focus(var(--white));
 }
 
+.footer ::selection {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 .footer::after {
   display: block;
   position: absolute;
