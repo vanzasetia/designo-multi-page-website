@@ -50,6 +50,30 @@
   }
 }
 
+.features__image {
+  position: relative;
+}
+
+.features__image::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("/svg/bg-pattern-small-circle.svg");
+  background-position: top left;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.features__image--rotate-275deg::after {
+  transform: rotate(275deg);
+}
+
+.features__image--rotate-90deg::after {
+  transform: rotate(90deg);
+}
+
 .features__container {
   @include breakpoint-up("tiny") {
     margin-left: rem(48);
