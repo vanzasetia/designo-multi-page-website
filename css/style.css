@@ -104,7 +104,7 @@ textarea {
   --space-2xs: clamp(1.5rem, calc(1.19rem + 1.55vw), 2.5rem);
   --space-xs: clamp(1.5rem, calc(0.12rem + 6.89vw), 5.94rem);
   --space-s: clamp(2.19rem, calc(1.62rem + 2.82vw), 4rem);
-  --space-m: clamp(4rem, calc(3.84rem + 0.78vw), 4.5rem);
+  --space-m: clamp(3.56rem, calc(3.43rem + 0.68vw), 4rem);
   --space-l: clamp(5rem, calc(3.74rem + 6.31vw), 9.06rem);
   --space-xl: clamp(7.5rem, calc(6.72rem + 3.88vw), 10rem);
   --transition-base: 200ms ease-in-out;
