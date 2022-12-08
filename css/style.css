@@ -104,7 +104,7 @@ textarea {
   --space-2xs: clamp(1.5rem, calc(1.19rem + 1.55vw), 2.5rem);
   --space-xs: clamp(1.5rem, calc(0.12rem + 6.89vw), 5.94rem);
   --space-s: clamp(2.19rem, calc(1.62rem + 2.82vw), 4rem);
-  --space-m: clamp(3.56rem, calc(3.27rem + 1.46vw), 4.5rem);
+  --space-m: clamp(4rem, calc(3.84rem + 0.78vw), 4.5rem);
   --space-l: clamp(5rem, calc(3.74rem + 6.31vw), 9.06rem);
   --space-xl: clamp(7.5rem, calc(6.72rem + 3.88vw), 10rem);
   --transition-base: 200ms ease-in-out;
@@ -177,6 +177,10 @@ body.is-menu-open::before {
   width: 100%;
   height: 100vh;
   content: "";
+}
+
+.font-weight-700 {
+  font-weight: 700;
 }
 
 h1,
@@ -391,7 +395,7 @@ audio:not([controls]) {
   padding-left: 1.5rem;
 }
 
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .container--padding\@tiny {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -406,7 +410,7 @@ audio:not([controls]) {
   border-radius: 0.9375rem;
 }
 
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .card--rounded\@tiny {
     border-radius: 0.9375rem;
   }
@@ -490,7 +494,7 @@ audio:not([controls]) {
 .card--web-design {
   background-image: url("/images/home/mobile/image-web-design.jpg");
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .card--web-design {
     background-image: url("/images/home/tablet/image-web-design.jpg");
   }
@@ -504,7 +508,7 @@ audio:not([controls]) {
 .card--app-design {
   background-image: url("/images/home/mobile/image-app-design.jpg");
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .card--app-design {
     background-image: url("/images/home/tablet/image-app-design.jpg");
   }
@@ -518,7 +522,7 @@ audio:not([controls]) {
 .card--graphic-design {
   background-image: url("/images/home/mobile/image-graphic-design.jpg");
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .card--graphic-design {
     background-image: url("/images/home/tablet/image-graphic-design.jpg");
   }
@@ -633,7 +637,7 @@ audio:not([controls]) {
   width: 2.75rem;
   height: 2.75rem;
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .header__menu-button {
     display: none;
   }
@@ -667,7 +671,7 @@ audio:not([controls]) {
       transform var(--transition-base);
   }
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .header__list {
     display: flex;
     position: initial;
@@ -682,7 +686,7 @@ audio:not([controls]) {
 .header__item:not(:first-child) {
   margin-top: 2rem;
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .header__item:not(:first-child) {
     margin-top: 0;
     margin-left: 2.625rem;
@@ -712,7 +716,7 @@ audio:not([controls]) {
     text-decoration: underline;
   }
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .header__link {
     font-size: inherit;
   }
@@ -726,7 +730,7 @@ audio:not([controls]) {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .no-js .header__container {
     flex-direction: row;
     justify-content: space-between;
@@ -748,7 +752,7 @@ audio:not([controls]) {
   padding: 0;
   color: var(--black);
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .no-js .header__list {
     margin-top: 0;
   }
@@ -819,7 +823,7 @@ audio:not([controls]) {
   gap: 5rem;
   text-align: center;
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .features {
     gap: 1.875rem;
     text-align: left;
@@ -836,7 +840,7 @@ audio:not([controls]) {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .features__title {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -854,7 +858,7 @@ audio:not([controls]) {
   flex-grow: 1;
   justify-items: center;
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .features__item {
     grid-template-columns: minmax(12.5rem, 25%) 1fr;
     align-items: center;
@@ -866,7 +870,31 @@ audio:not([controls]) {
   }
 }
 
-@media screen and (min-width: 40.625em) {
+.features__image {
+  position: relative;
+}
+
+.features__image::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("/svg/bg-pattern-small-circle.svg");
+  background-position: top left;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.features__image--rotate-275deg::after {
+  transform: rotate(275deg);
+}
+
+.features__image--rotate-90deg::after {
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 42.1875em) {
   .features__container {
     margin-left: 3rem;
   }
@@ -916,6 +944,11 @@ audio:not([controls]) {
   outline-offset: 0.3125rem;
 }
 
+.footer ::selection {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 .footer::after {
   display: block;
   position: absolute;
@@ -935,7 +968,7 @@ audio:not([controls]) {
   align-items: center;
   text-align: center;
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .footer__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -970,7 +1003,7 @@ audio:not([controls]) {
   justify-self: flex-end;
 }
 
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .footer__list {
     display: flex;
   }
@@ -979,7 +1012,7 @@ audio:not([controls]) {
 .footer__item:not(:first-child) {
   margin-top: 2rem;
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .footer__item:not(:first-child) {
     margin-top: 0;
     margin-left: 2.625rem;
@@ -1007,7 +1040,7 @@ audio:not([controls]) {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .footer__address {
     grid-area: address;
     margin-top: 0;
@@ -1024,10 +1057,6 @@ audio:not([controls]) {
   display: block;
 }
 
-.footer__bold {
-  font-weight: 700;
-}
-
 .footer__address,
 .footer__contact {
   opacity: 0.5;
@@ -1036,7 +1065,7 @@ audio:not([controls]) {
 .footer__social-media {
   margin-top: 2.5rem;
 }
-@media screen and (min-width: 40.625em) {
+@media screen and (min-width: 42.1875em) {
   .footer__social-media {
     display: flex;
     grid-area: social;
