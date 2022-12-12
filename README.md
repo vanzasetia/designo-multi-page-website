@@ -408,8 +408,8 @@ First, if the mobile users enable JavaScript, they get a hamburger menu. If they
 
 ## License
 
-> You can check out [the full license](./LICENSE)
+[MIT](./LICENSE)
 
 ## References
 
-> See the [documentation.](./docs/README.md)
+See the [documentation](./docs/README.md).
