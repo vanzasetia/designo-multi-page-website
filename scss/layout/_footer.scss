@@ -107,14 +107,14 @@
   grid-area: contact;
 }
 
-.footer__address span,
-.footer__contact span {
-  display: block;
-}
-
 .footer__address,
 .footer__contact {
   opacity: 0.5;
+}
+
+.footer__address span,
+.footer__contact span {
+  display: block;
 }
 
 .footer__social-media {

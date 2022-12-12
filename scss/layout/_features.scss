@@ -22,19 +22,6 @@
   }
 }
 
-.features__title {
-  @include features-title-vertical-space;
-
-  @include breakpoint-up("tiny") {
-    margin-top: 0;
-    margin-bottom: rem(16);
-  }
-
-  @include breakpoint-up("very-small") {
-    @include features-title-vertical-space;
-  }
-}
-
 .features__item {
   display: grid;
   flex-grow: 1;
@@ -81,5 +68,18 @@
 
   @include breakpoint-up("very-small") {
     margin-left: 0;
+  }
+}
+
+.features__title {
+  @include features-title-vertical-space;
+
+  @include breakpoint-up("tiny") {
+    margin-top: 0;
+    margin-bottom: rem(16);
+  }
+
+  @include breakpoint-up("very-small") {
+    @include features-title-vertical-space;
   }
 }

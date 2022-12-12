@@ -12,15 +12,6 @@
   }
 }
 
-.links__heading {
-  display: block;
-  margin-bottom: rem(24);
-}
-
-.links__icon {
-  display: inline;
-}
-
 .links__card:not(:first-child) {
   margin-top: rem(24);
 
@@ -31,4 +22,13 @@
 
 .links__card:first-child {
   grid-row: 1 / 3;
+}
+
+.links__heading {
+  display: block;
+  margin-bottom: rem(24);
+}
+
+.links__icon {
+  display: inline;
 }
