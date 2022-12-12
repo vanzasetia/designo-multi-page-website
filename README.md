@@ -115,7 +115,7 @@ Read more — [aria-label Does Not Translate](https://adrianroselli.com/2019/11/
 
 #### Hamburger Menu Is Not The Ultimate Solution
 
-Hamburger menu is a button with three horizontal lines. When it is clicked it opens navigation links. In this case, it is on the top right corner of a web page on mobile screen sizes.
+Hamburger menu is a button with three horizontal lines. It is used to hide navigation options (usually for mobile users). When it is clicked it opens navigation links.
 
 There are pros and cons to the hamburger menu. But, one thing that is sure is that it takes at least two clicks for the users to navigate to another page.
 
