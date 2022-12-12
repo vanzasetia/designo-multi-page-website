@@ -28,8 +28,6 @@
 
 ## Overview
 
-[(Back to top)](#table-of-contents)
-
 ### Introduction
 
 I did this project to sharpen my HTML and CSS skills. It was the first time I created a 7-page website. I hoped this project proved that now I am ready to work in the professional world.
@@ -58,8 +56,6 @@ My users should be able to:
 - [Frontend Mentor Solution Page]()
 
 ## My Process
-
-[(Back to top)](#table-of-contents)
 
 ### Built With
 
@@ -402,8 +398,6 @@ First, if the mobile users enable JavaScript, they get a hamburger menu. If they
 
 ## Author
 
-[(Back to top)](#table-of-contents)
-
 - Frontend Mentor - [@vanzasetia](https://frontendmentor.io/profile/vanzasetia)
 - Twitter - [@vanzasetia](https://twitter.com/vanzasetia)
 - Code Newbie - [@vanzasetia](https://community.codenewbie.org/vanzasetia)
@@ -411,16 +405,11 @@ First, if the mobile users enable JavaScript, they get a hamburger menu. If they
 
 ## Acknowledgements
 
-[(Back to top)](#table-of-contents)
 
 ## License
-
-[(Back to top)](#table-of-contents)
 
 > You can check out [the full license](./LICENSE)
 
 ## References
-
-[(Back to top)](#table-of-contents)
 
 > See the [documentation.](./docs/README.md)
