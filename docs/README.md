@@ -56,9 +56,19 @@ This is the place where I put all the resources that I find useful to build this
 - [Meta Tags — Preview, Edit and Generate](https://metatags.io/) - Preview social media cards for the website.
 - [Chicago - Title Capitalization Tool - Capitalize My Title - Title Case Tool](https://capitalizemytitle.com/style/Chicago/)
 - [Url Encoder - Online Tool](https://www.urlencoder.net/) - Encode the text for the 700 font weight.
+- [Pixel and REM Converter](https://pixelandrem.netlify.app/) - If I forget about the pixel of value of the `clamp` functions (fluid space), I will use this tool.
 
 ### Validations
 
+- [The W3C Markup Validation Service](https://validator.w3.org/)
+  - [Showing results for https://officialdesigno.netlify.app/ - Nu Html Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofficialdesigno.netlify.app%2F)
+- [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - [W3C CSS Validator results for https://officialdesigno.netlify.app/ (CSS level 3 + SVG)](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fofficialdesigno.netlify.app%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- [Checklist - The A11Y Project](https://www.a11yproject.com/checklist/)
+- [GTmetrix | Website Performance Testing and Monitoring](https://gtmetrix.com/) - [Latest Performance Report for: https://officialdesigno.netlify.app/ | GTmetrix](https://gtmetrix.com/reports/officialdesigno.netlify.app/oagG3cFj/)
+- [PageSpeed Insights](https://pagespeed.web.dev/) - [Report for: https://officialdesigno.netlify.app/ | PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Fofficialdesigno.netlify.app%2F&)
+- [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/) - [WAVE Report of Craft Designs That Make Real Impact - Designo](https://wave.webaim.org/report#/https://officialdesigno.netlify.app/)
+- [The Front-End Checklist - ✨ Your best Front-End Tool ✨](https://frontendchecklist.io/)
+- [WebPageTest - Website Performance and Optimization Test](https://www.webpagetest.org/) - [officialdesigno.net...irginia USA - EC2 - WebPageTest Result](https://www.webpagetest.org/result/221208_BiDc43_8WC/)
 
 ### Others
 
