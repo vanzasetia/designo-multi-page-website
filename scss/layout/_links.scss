@@ -1,9 +1,6 @@
 @use "../abstracts" as *;
 
 .links {
-  padding-top: var(--space-xl);
-  padding-bottom: var(--space-xl);
-
   @include breakpoint-up("very-small") {
     display: grid;
     grid-template-rows: repeat(2, 1fr);

@@ -146,6 +146,10 @@ main:focus {
   outline: none;
 }
 
+.flow > * + * {
+  margin-top: var(--space-xl);
+}
+
 /**
  * 1. Remove the border on images inside links in IE 10.
  */
