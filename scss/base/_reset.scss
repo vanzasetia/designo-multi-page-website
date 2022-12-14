@@ -44,12 +44,12 @@
 }
 
 ::selection {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--selection-background-color, var(--black));
+  color: var(--selection-text-color, var(--white));
 }
 
 :focus {
-  @include focus-styling(var(--black));
+  @include focus-styling(var(--focus-outline-color, var(--black)));
 }
 
 /**

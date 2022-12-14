@@ -74,18 +74,18 @@
 }
 
 .header__link {
-  font-size: rem(24);
+  --focus-outline-color: var(--white);
 
-  @include focus(var(--white));
+  font-size: rem(24);
 
   @include hover {
     text-decoration: underline;
   }
 
   @include breakpoint-up("tiny") {
-    font-size: inherit;
+    --focus-outline-color: var(--black);
 
-    @include focus(var(--black));
+    font-size: inherit;
   }
 }
 
@@ -125,7 +125,7 @@
 }
 
 .no-js .header__link {
-  font-size: inherit;
+  --focus-outline-color: var(--black);
 
-  @include focus(var(--black));
+  font-size: inherit;
 }

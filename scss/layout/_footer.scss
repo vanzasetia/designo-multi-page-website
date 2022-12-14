@@ -1,19 +1,14 @@
 @use "../abstracts" as *;
 
 .footer {
+  --focus-outline-color: var(--white);
+  --selection-background-color: var(--white);
+  --selection-text-color: var(--black);
+
   position: relative;
   background-color: var(--black);
   padding-bottom: rem(72);
   color: var(--white);
-}
-
-.footer *:focus {
-  @include focus(var(--white));
-}
-
-.footer ::selection {
-  background-color: var(--white);
-  color: var(--black);
 }
 
 .footer::after {
