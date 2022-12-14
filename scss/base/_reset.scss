@@ -212,6 +212,10 @@ a {
   text-decoration-color: transparent;
 }
 
+a span {
+  display: block;
+}
+
 button[type="button"],
 button[type="submit"],
 a {
