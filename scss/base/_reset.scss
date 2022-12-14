@@ -123,7 +123,7 @@ h3,
 }
 
 p:not([class]),
-p[class$="description"] {
+[class$="description"] {
   margin-right: auto;
   margin-left: auto;
   max-width: rem(445);
