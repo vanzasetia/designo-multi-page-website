@@ -1,0 +1,56 @@
+@use "../abstracts" as *;
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(rem(350), 100%), 1fr));
+  gap: rem(30);
+}
+
+.projects__card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(rem(300), 100%), 1fr));
+  overflow: hidden;
+
+  @include prefers-motion {
+    transition: background-color var(--transition-base),
+      color var(--transition-base);
+  }
+
+  @include hover {
+    background-color: var(--peach);
+    color: var(--white);
+
+    .projects__title {
+      color: inherit;
+    }
+
+    .projects__image {
+      transform: scale(1.025);
+    }
+  }
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: rem(32);
+  text-align: center;
+}
+
+.projects__image {
+  width: 100%;
+
+  @include prefers-motion {
+    transition: transform var(--transition-base);
+  }
+}
+
+.projects__title {
+  margin-bottom: rem(15);
+  color: var(--peach);
+}
+
+.projects__description {
+  text-transform: none;
+}

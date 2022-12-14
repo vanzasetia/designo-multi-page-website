@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+
+.champion__card {
+  background-image: url("/svg/bg-pattern-design-pages-intro-mobile.svg");
+  background-position: top right;
+  padding: var(--space-m) var(--space-xs);
+
+  @include breakpoint-up("tiny") {
+    background-image: url("/svg/bg-pattern-design-pages-intro-tablet.svg");
+    background-position: center right;
+    background-repeat: repeat-y;
+  }
+}
+
+.champion__container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: rem(400);
+  text-align: center;
+}
+
+.champion__description {
+  margin-top: rem(24);
+}

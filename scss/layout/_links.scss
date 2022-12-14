@@ -9,7 +9,19 @@
   }
 }
 
-.links__card:not(:first-child) {
+.links--flex {
+  @include breakpoint-up("very-small") {
+    display: flex;
+  }
+}
+
+.links--flex > * {
+  @include breakpoint-up("very-small") {
+    flex-basis: 100%;
+  }
+}
+
+.links__item:not(:first-child) {
   margin-top: rem(24);
 
   @include breakpoint-up("very-small") {
@@ -17,8 +29,70 @@
   }
 }
 
-.links__card:first-child {
+.links__item:first-child {
   grid-row: 1 / 3;
+}
+
+.links__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-color: hsl(0deg 0% 0% / 60%);
+  background-blend-mode: overlay;
+  padding: rem(90) rem(16);
+  height: 100%;
+  color: var(--white);
+  font-weight: 500;
+  letter-spacing: rem(5);
+  text-align: center;
+  text-transform: uppercase;
+
+  @include prefers-motion {
+    transition: background-color var(--transition-base);
+  }
+
+  @include hover {
+    background-color: hsl(11deg 73% 66% / 60%);
+  }
+}
+
+.links__card--web-design {
+  background-image: url("/images/home/mobile/image-web-design.jpg");
+
+  @include breakpoint-up("tiny") {
+    background-image: url("/images/home/tablet/image-web-design.jpg");
+  }
+
+  @include breakpoint-up("very-small") {
+    background-image: url("/images/home/desktop/image-web-design-large.jpg");
+  }
+}
+
+.links__card--app-design {
+  background-image: url("/images/home/mobile/image-app-design.jpg");
+
+  @include breakpoint-up("tiny") {
+    background-image: url("/images/home/tablet/image-app-design.jpg");
+  }
+
+  @include breakpoint-up("very-small") {
+    background-image: url("/images/home/desktop/image-app-design.jpg");
+  }
+}
+
+.links__card--graphic-design {
+  background-image: url("/images/home/mobile/image-graphic-design.jpg");
+
+  @include breakpoint-up("tiny") {
+    background-image: url("/images/home/tablet/image-graphic-design.jpg");
+  }
+
+  @include breakpoint-up("very-small") {
+    background-image: url("/images/home/desktop/image-graphic-design.jpg");
+  }
 }
 
 .links__heading {

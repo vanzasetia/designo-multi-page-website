@@ -35,3 +35,10 @@
     transform: rotate(180deg);
   }
 }
+
+.wrapper--sub-page {
+  @include breakpoint-up("very-small") {
+    background-image: url("/svg/bg-pattern-leaf.svg");
+    background-position: top rem(135) left;
+  }
+}

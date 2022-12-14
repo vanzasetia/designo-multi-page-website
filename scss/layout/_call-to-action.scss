@@ -4,6 +4,21 @@
   padding-bottom: rem(72);
 }
 
+.call-to-action__card {
+  background-image: url("/svg/bg-pattern-call-to-action.svg");
+  background-position: center right;
+  background-repeat: repeat-y;
+  padding: var(--space-m) var(--space-xs);
+  text-align: center;
+
+  @include breakpoint-up("very-small") {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}
+
 .call-to-action__container {
   flex-shrink: 1;
   flex-basis: rem(450);

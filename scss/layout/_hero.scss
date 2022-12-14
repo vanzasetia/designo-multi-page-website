@@ -1,5 +1,19 @@
 @use "../abstracts" as *;
 
+.hero__card {
+  background-image: url("/svg/bg-pattern-hero-home.svg"),
+    url("/images/home/image-hero-phone.png");
+  background-position: center left, bottom rem(-425) center;
+  padding: var(--space-l) var(--space-3xs) rem(457);
+  text-align: center;
+
+  @include breakpoint-up("very-small") {
+    background-position: center right, bottom rem(-245) right rem(-96);
+    padding-bottom: var(--space-l);
+    text-align: left;
+  }
+}
+
 .hero__container {
   @include breakpoint-up("very-small") {
     max-width: rem(500);
