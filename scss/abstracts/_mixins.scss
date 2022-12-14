@@ -48,3 +48,14 @@
     @content;
   }
 }
+
+@mixin supports($property, $value, $copy: false) {
+  @supports ($property: $value) {
+    @if $copy {
+      #{$property}: $value;
+      @content;
+    } @else {
+      @content;
+    }
+  }
+}

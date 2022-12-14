@@ -973,15 +973,34 @@ audio:not([controls]) {
 }
 
 .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(21.875rem, 100%), 1fr));
-  gap: 1.875rem;
+  max-width: 25rem;
+}
+@supports (display: grid) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(21.875rem, 100%), 1fr));
+    gap: 1.875rem;
+    max-width: 72.375rem;
+  }
+}
+
+.projects > * + * {
+  margin-top: 2.5rem;
+}
+@supports (display: grid) {
+  .projects > * + * {
+    margin-top: unset;
+  }
 }
 
 .projects__card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(18.75rem, 100%), 1fr));
   overflow: hidden;
+}
+@supports (display: grid) {
+  .projects__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(18.75rem, 100%), 1fr));
+  }
 }
 @media (prefers-reduced-motion: no-preference) {
   .projects__card {
