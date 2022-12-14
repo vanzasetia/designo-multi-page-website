@@ -57,6 +57,8 @@ This is the place where I put all the resources that I find useful to build this
 - [Chicago - Title Capitalization Tool - Capitalize My Title - Title Case Tool](https://capitalizemytitle.com/style/Chicago/)
 - [Url Encoder - Online Tool](https://www.urlencoder.net/) - Encode the text for the 700 font weight.
 - [Pixel and REM Converter](https://pixelandrem.netlify.app/) - If I forget about the pixel of value of the `clamp` functions (fluid space), I will use this tool.
+- [Site-Shot - Capture a Website screenshot via API](https://www.site-shot.com/) - Take full screenshot of each page.
+- [Squoosh](https://squoosh.app/) - Optimize the file sizes of the screenshots.
 
 ### Validations
 
