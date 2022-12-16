@@ -978,7 +978,7 @@ audio:not([controls]) {
 @supports (display: grid) {
   .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(21.875rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(21.875rem, 100%), 1fr));
     gap: 1.875rem;
     max-width: 72.375rem;
   }
@@ -1043,6 +1043,7 @@ audio:not([controls]) {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 2rem;
   text-align: center;
 }
