@@ -318,6 +318,167 @@ So, I could not solve the issue. If anyone knows how to solve the problem or wan
 
 Discuss the issue with me — []()
 
+#### Responsive Grid on Design Pages with No Media Queries
+
+At first, I was building the section with CSS Grid, Flexbox, and media queries. Later, I managed to create a responsive grid layout with no media queries.
+
+Before I continue, I want to let you know that as I am telling you my process, I will only show you the necessary code. Also, take a look at the site and resize your browser's window. This way, you can better understand the responsiveness of the site.
+
+See the live site — [Web Design - Designo](https://officialdesigno.netlify.app/web-design.html)
+
+Going back to my process, I wrote this HTML markup for the cards' container and the card.
+
+```html
+<div class="projects">
+  <a href="/" class="projects__card">
+    <img
+      src="/images/web-design/image-express.jpg"
+      alt=""
+      class="projects__image"
+      width="350"
+      height="320"
+    />
+    <span class="projects__container">
+      <span class="projects__title">Express</span>
+      <span class="projects__description">
+        A multi-carrier shipping website for ecommerce businesses
+      </span>
+    </span>
+  </a>
+  <!-- The other card elements go here -->
+</div>
+```
+
+Note: I made each card with an anchor tag because it had a hover effect. So, all of them should be interactive elements. I assumed that if this was a real website, then each link would navigate the users to the project (e.g. Express project, etc).
+
+After the HTML was done, it was time to create the layout.
+
+I set the spacing for the card using `gap` property. So, I made the cards' container a flex container.
+
+```css
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+```
+
+Then on the desktop layout, I made it a grid container to create a three-column layout.
+
+```css
+@media screen and (min-width: 59.375em) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+```
+
+Now for the card, I used flexbox to make it a two-column layout for the tablet layout.
+
+```css
+@media screen and (min-width: 42.1875em) {
+  .projects__card {
+    display: flex;
+  }
+}
+```
+
+After that, I made it into a one-column layout for the desktop layout.
+
+```css
+@media screen and (min-width: 59.375em) {
+  .projects__card {
+    flex-direction: column;
+  }
+}
+```
+
+The image of the card needed to adapt based on the card layout. When the card was in a one-column layout the image should take up the full width of the card. Then, when the card was on the two-column layout, the image should have half of the card's width.
+
+```css
+.projects__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 42.1875em) {
+  .projects__image {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 59.375em) {
+  .projects__image {
+    width: 100%;
+  }
+}
+```
+
+Note: I did not use `flex-basis` even though the card was a flex container. That is because when I set `flex-basis: 100%` the image did not fill the entire width of the card. I assumed that it followed the size of the `width` and `height` attributes. Also, if I used `flex-basis` when the `flex-direction` was set to `column`, the `flex-basis` would control the height of the image. So, that was why I used `width` instead of `flex-basis`.
+
+The result was a responsive layout with CSS Grid, Flexbox, and media queries.
+
+<details>
+
+<summary>Preview the result of the approach</summary>
+
+![](./screenshots/responsive-card-layout-on-design-page-with-flexbox-and-grid.gif)
+
+</details>
+
+But, I used media queries. It means that I can not use the `projects` component if its width of it depends on the viewport's width instead of the container's width.
+
+Note: Component is a set of code that can be reused many times throughout the project.
+
+It turned out that it is possible to create that layout responsively with no media queries. There is a technique called "Repeat, Auto, Minmax" (RAM). I knew it from [1-Line Layouts](https://1linelayouts.glitch.me/).
+
+The idea of RAM is to have a grid container that controls the layout. Here is an example.
+
+```css
+.parent {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+```
+
+Now, how did I implement this technique into my layout?
+
+On the container of the cards, I did the following.
+
+```css
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(21.875rem, 100%), 1fr));
+  gap: 1.875rem;
+}
+```
+
+I used `auto-fit` as the first value of the `repeat()` function so that it allows the browser to create more columns when there is enough space. It also will make sure that the grid items are filling the available space.
+
+Note: In this case, there is no difference when I used `auto-fill` instead of `auto-fit`. But, after learning the difference between the two, I decided to use `auto-fit`.
+
+Learn the difference between `auto-fit` and `auto-fill` — [Auto-Sizing Columns in CSS Grid: `auto-fill` vs `auto-fit` | CSS-Tricks](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/)
+
+Then, I used `minmax()` as the second value to guide the browser about the size of each column. I wrapped the first value of `minmax()` with `min()`. By setting `min(21.875rem, 100%)`, I am saying that, "If there is not enough space for the element to be `21.875rem`, then you can have `100%` width of the parent element". The purpose is to make the grid items allowed to shrink if ever needed. I set `1fr` for the maximum value of the width. This way, each column would take the available space and make sure all the columns have the same width.
+
+For the card layout, I did this.
+
+```css
+.projects__card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(18.75rem, 100%), 1fr));
+}
+```
+
+I used `repeat()` to allow browsers to create more columns based on the guide that I gave. Then, for the first value, I wrote `auto-fit` so the browser can automatically create more columns when there is enough space.
+
+After that, I used `minmax()` function. For the first value that is the minimum width of each grid item should be `18.75rem` (`300px`). It is wrapped by `min()` function and the second value is `100%` to allow it to shrink if needed. For the maximum width, I gave it `1fr` to allow it to grow while still making sure each grid item has the same width.
+
+As for the image, there was nothing to worry about it since CSS Grid would take care of it. Unlike CSS Flexbox which is flexible, CSS Grid forced the image as a grid item to obey the rules.
+
+This result is a responsive layout for both the container of the cards and the card with no media queries.
+
 #### Card Above Footer
 
 ![](./screenshots/card-above-footer.png)
