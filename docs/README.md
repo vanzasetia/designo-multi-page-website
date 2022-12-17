@@ -52,7 +52,7 @@ This is the place where I put all the resources that I find useful to build this
 - [Fluid Space Calculator | Utopia (Designo Settings)](https://utopia.fyi/space/calculator/?c=320,80,1.2,1350,140,1.25,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l)
 - [Paraphrasing Tool | QuillBot AI](https://quillbot.com/) - Help me find an idea for the `meta` description for each page.
 - [Grammarly: Free Online Writing Assistant](https://www.grammarly.com/) - Prevent me from doing typo and grammar errors.
-- [Lingva Translate](https://lingva.ml/) - It works the same as [Google Translate](https://translate.google.com/). I used this translate English to Bahasa Indonesia and vice versa.
+- [Lingva Translate](https://lingva.ml/) - It works the same as [Google Translate](https://translate.google.com/). I used this to translate English to Bahasa Indonesia and vice versa.
 - [Meta Tags — Preview, Edit and Generate](https://metatags.io/) - Preview social media cards for the website.
 - [Chicago - Title Capitalization Tool - Capitalize My Title - Title Case Tool](https://capitalizemytitle.com/style/Chicago/)
 - [Url Encoder - Online Tool](https://www.urlencoder.net/) - Encode the text for the 700 font weight.
