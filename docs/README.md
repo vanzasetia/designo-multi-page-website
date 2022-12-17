@@ -5,6 +5,7 @@
 ## Table of contents
 
 - [Overview](#overview)
+- [Notes](#notes)
 - [References](#references)
   - [Web Documentation](#web-documentation)
   - [Articles](#articles)
@@ -15,6 +16,10 @@
 ## Overview
 
 This is the place where I put all the resources that I find useful to build this project. This can be used for future reference or help anyone that is doing this challenge.
+
+## Notes
+
+It is worth knowing that `bg-pattern-design-pages-intro-tablet.svg` is the same background pattern as `bg-pattern-intro-web.svg`. The site uses the `bg-pattern-intro-web.svg` as the main background pattern for the web design card while using the other one as the default background pattern of the card (`.champion__card`).
 
 ## References
 
