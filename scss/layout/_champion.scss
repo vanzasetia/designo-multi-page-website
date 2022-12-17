@@ -7,8 +7,37 @@
 
   @include breakpoint-up("tiny") {
     background-image: url("/svg/bg-pattern-design-pages-intro-tablet.svg");
-    background-position: center right;
     background-repeat: repeat-y;
+  }
+}
+
+.champion__card--web-design\@tiny {
+  @include breakpoint-up("tiny") {
+    background-image: url("/svg/bg-pattern-intro-web.svg");
+  }
+}
+
+.champion__card--app-design\@tiny {
+  @include breakpoint-up("tiny") {
+    background-image: url("/svg/bg-pattern-intro-app.svg");
+  }
+}
+
+.champion__card--graphic-design\@tiny {
+  @include breakpoint-up("tiny") {
+    background-image: url("/svg/bg-pattern-intro-graphic.svg");
+  }
+}
+
+.champion__card--background-center-right\@tiny {
+  @include breakpoint-up("tiny") {
+    background-position: center right;
+  }
+}
+
+.champion__card--background-center-left\@tiny {
+  @include breakpoint-up("tiny") {
+    background-position: center left;
   }
 }
 

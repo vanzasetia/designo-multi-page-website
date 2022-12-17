@@ -782,6 +782,12 @@ audio:not([controls]) {
   }
 }
 
+@media screen and (min-width: 59.375em) {
+  .links__card--web-design-small {
+    background-image: url("/images/home/desktop/image-web-design-small.jpg");
+  }
+}
+
 .links__card--app-design {
   background-image: url("/images/home/mobile/image-app-design.jpg");
 }
@@ -956,8 +962,37 @@ audio:not([controls]) {
 @media screen and (min-width: 42.1875em) {
   .champion__card {
     background-image: url("/svg/bg-pattern-design-pages-intro-tablet.svg");
-    background-position: center right;
     background-repeat: repeat-y;
+  }
+}
+
+@media screen and (min-width: 42.1875em) {
+  .champion__card--web-design\@tiny {
+    background-image: url("/svg/bg-pattern-intro-web.svg");
+  }
+}
+
+@media screen and (min-width: 42.1875em) {
+  .champion__card--app-design\@tiny {
+    background-image: url("/svg/bg-pattern-intro-app.svg");
+  }
+}
+
+@media screen and (min-width: 42.1875em) {
+  .champion__card--graphic-design\@tiny {
+    background-image: url("/svg/bg-pattern-intro-graphic.svg");
+  }
+}
+
+@media screen and (min-width: 42.1875em) {
+  .champion__card--background-center-right\@tiny {
+    background-position: center right;
+  }
+}
+
+@media screen and (min-width: 42.1875em) {
+  .champion__card--background-center-left\@tiny {
+    background-position: center left;
   }
 }
 

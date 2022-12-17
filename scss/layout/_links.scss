@@ -71,6 +71,12 @@
   }
 }
 
+.links__card--web-design-small {
+  @include breakpoint-up("very-small") {
+    background-image: url("/images/home/desktop/image-web-design-small.jpg");
+  }
+}
+
 .links__card--app-design {
   background-image: url("/images/home/mobile/image-app-design.jpg");
 
