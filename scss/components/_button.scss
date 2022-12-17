@@ -5,7 +5,7 @@
   border: none;
   border-radius: rem(8);
   padding: rem(16) rem(24);
-  letter-spacing: rem(1);
+  letter-spacing: 0.0625em;
   text-decoration: none;
 
   @include prefers-motion {

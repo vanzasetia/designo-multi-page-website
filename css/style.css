@@ -199,14 +199,14 @@ h2,
 .heading--two {
   font-size: var(--fluid-typography-100);
   line-height: 1.2;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.05em;
 }
 
 h3,
 .heading--three {
   font-size: 1.25rem;
   line-height: 1.3;
-  letter-spacing: 0.3125rem;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
 }
 
@@ -293,7 +293,7 @@ button[type] {
 a {
   background-color: transparent; /* 1 */
   color: inherit;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.125em;
   text-decoration-color: transparent;
 }
 
@@ -402,7 +402,7 @@ audio:not([controls]) {
   padding-left: 1.5rem;
 }
 
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .container--padding\@tiny {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -417,7 +417,7 @@ audio:not([controls]) {
   border-radius: 0.9375rem;
 }
 
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .card--rounded\@tiny {
     border-radius: 0.9375rem;
   }
@@ -438,7 +438,7 @@ audio:not([controls]) {
   border: none;
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
-  letter-spacing: 0.0625rem;
+  letter-spacing: 0.0625em;
   text-decoration: none;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -544,7 +544,7 @@ audio:not([controls]) {
   width: 2.75rem;
   height: 2.75rem;
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .header__menu-button {
     display: none;
   }
@@ -578,7 +578,7 @@ audio:not([controls]) {
       transform var(--transition-base);
   }
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .header__list {
     display: flex;
     position: initial;
@@ -593,7 +593,7 @@ audio:not([controls]) {
 .header__item:not(:first-child) {
   margin-top: 2rem;
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .header__item:not(:first-child) {
     margin-top: 0;
     margin-left: 2.625rem;
@@ -620,7 +620,7 @@ audio:not([controls]) {
     text-decoration: underline;
   }
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .header__link {
     --focus-outline-color: var(--black);
     font-size: inherit;
@@ -631,7 +631,7 @@ audio:not([controls]) {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .no-js .header__container {
     flex-direction: row;
     justify-content: space-between;
@@ -653,7 +653,7 @@ audio:not([controls]) {
   padding: 0;
   color: var(--black);
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .no-js .header__list {
     margin-top: 0;
   }
@@ -742,7 +742,7 @@ audio:not([controls]) {
   height: 100%;
   color: var(--white);
   font-weight: 500;
-  letter-spacing: 0.3125rem;
+  letter-spacing: 0.3125em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -771,7 +771,7 @@ audio:not([controls]) {
 .links__card--web-design {
   background-image: url("/images/home/mobile/image-web-design.jpg");
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .links__card--web-design {
     background-image: url("/images/home/tablet/image-web-design.jpg");
   }
@@ -791,7 +791,7 @@ audio:not([controls]) {
 .links__card--app-design {
   background-image: url("/images/home/mobile/image-app-design.jpg");
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .links__card--app-design {
     background-image: url("/images/home/tablet/image-app-design.jpg");
   }
@@ -805,7 +805,7 @@ audio:not([controls]) {
 .links__card--graphic-design {
   background-image: url("/images/home/mobile/image-graphic-design.jpg");
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .links__card--graphic-design {
     background-image: url("/images/home/tablet/image-graphic-design.jpg");
   }
@@ -830,7 +830,7 @@ audio:not([controls]) {
   gap: 5rem;
   text-align: center;
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .features {
     gap: 1.875rem;
     text-align: left;
@@ -848,7 +848,7 @@ audio:not([controls]) {
   flex-grow: 1;
   justify-items: center;
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .features__item {
     grid-template-columns: minmax(12.5rem, 25%) 1fr;
     align-items: center;
@@ -884,7 +884,7 @@ audio:not([controls]) {
   transform: rotate(90deg);
 }
 
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .features__container {
     margin-left: 3rem;
   }
@@ -899,7 +899,7 @@ audio:not([controls]) {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .features__title {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -959,38 +959,38 @@ audio:not([controls]) {
   background-position: top right;
   padding: var(--space-m) var(--space-xs);
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .champion__card {
     background-image: url("/svg/bg-pattern-design-pages-intro-tablet.svg");
     background-repeat: repeat-y;
   }
 }
 
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .champion__card--web-design\@tiny {
     background-image: url("/svg/bg-pattern-intro-web.svg");
   }
 }
 
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .champion__card--app-design\@tiny {
     background-image: url("/svg/bg-pattern-intro-app.svg");
   }
 }
 
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .champion__card--graphic-design\@tiny {
     background-image: url("/svg/bg-pattern-intro-graphic.svg");
   }
 }
 
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .champion__card--background-center-right\@tiny {
     background-position: center right;
   }
 }
 
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .champion__card--background-center-left\@tiny {
     background-position: center left;
   }
@@ -1130,7 +1130,7 @@ audio:not([controls]) {
   align-items: center;
   text-align: center;
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .footer__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1165,7 +1165,7 @@ audio:not([controls]) {
   justify-self: flex-end;
 }
 
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .footer__list {
     display: flex;
   }
@@ -1174,7 +1174,7 @@ audio:not([controls]) {
 .footer__item:not(:first-child) {
   margin-top: 2rem;
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .footer__item:not(:first-child) {
     margin-top: 0;
     margin-left: 2.625rem;
@@ -1202,7 +1202,7 @@ audio:not([controls]) {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .footer__address {
     grid-area: address;
     margin-top: 0;
@@ -1227,7 +1227,7 @@ audio:not([controls]) {
 .footer__social-media {
   margin-top: 2.5rem;
 }
-@media screen and (min-width: 42.1875em) {
+@media screen and (min-width: 42.5em) {
   .footer__social-media {
     display: flex;
     grid-area: social;
