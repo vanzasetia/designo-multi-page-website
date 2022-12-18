@@ -4,6 +4,7 @@ $-card-border-radius: rem(15);
 
 .card {
   display: block;
+  overflow: hidden;
 }
 
 .card--rounded {

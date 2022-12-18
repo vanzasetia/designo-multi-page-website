@@ -19,8 +19,6 @@
 }
 
 .projects__card {
-  overflow: hidden;
-
   @include supports(display, grid, $copy: true) {
     grid-template-columns: repeat(auto-fit, minmax(min(rem(300), 100%), 1fr));
   }
