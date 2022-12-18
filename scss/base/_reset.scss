@@ -147,7 +147,7 @@ main:focus {
 }
 
 .flow > * + * {
-  margin-top: var(--space-xl);
+  margin-top: var(--spacer, var(--space-xl));
 }
 
 /**
