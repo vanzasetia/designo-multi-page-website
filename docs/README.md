@@ -33,6 +33,8 @@ It is worth knowing that `bg-pattern-design-pages-intro-tablet.svg` is the same 
 - [General sibling combinator - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator)
 - [Window.matchMedia() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia)
 - [CSS API update  |  Google Fonts  |  Google Developers #optimizing_your_font_requests](https://developers.google.com/fonts/docs/css2#optimizing_your_font_requests) - Use the `text=` to get necessary bold font.
+- [`<picture>`: The Picture element - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)
+- [`:nth-of-type()` - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type) - I used this to make the first `.information` has no `margin-top` on mobile breakpoint.
 
 ### Articles
 
