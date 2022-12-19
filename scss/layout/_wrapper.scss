@@ -16,6 +16,7 @@
     top: 0;
     left: 0;
     z-index: -1;
+    background-image: url("/svg/bg-pattern-leaf.svg");
     width: 100%;
     height: 100%;
     content: "";
@@ -25,7 +26,6 @@
 .wrapper--home::after,
 .wrapper--home::before {
   @include breakpoint-up("very-small") {
-    background-image: url("/svg/bg-pattern-leaf.svg");
     background-position: top rem(310) left;
   }
 }
@@ -38,7 +38,6 @@
 
 .wrapper--sub-page {
   @include breakpoint-up("very-small") {
-    background-image: url("/svg/bg-pattern-leaf.svg");
     background-position: top rem(135) left;
   }
 }
