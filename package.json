@@ -17,7 +17,7 @@
     "compile:sass": "sass scss/main.scss css/style.css --no-source-map",
     "build:css": "postcss ./css/style.css -o ./css/style.min.css --use autoprefixer cssnano --no-map",
     "build:js": "terser ./js/app.js --output ./js/app.min.js --compress --mangle",
-    "purify:css": "purifycss ./css/style.min.css ./index.html ./web-design.html ./app-design.html ./graphic-design.html ./js/app.js --min --out ./css/style.min.css --info",
+    "purify:css": "purifycss ./css/style.min.css ./index.html ./web-design.html ./app-design.html ./graphic-design.html ./about.html ./js/app.js --min --out ./css/style.min.css --info",
     "ready": "npm-run-all validate:html sort:scss lint:scss compile:sass build:css purify:css semistandard:js prettier build:js"
   },
   "postcss": {

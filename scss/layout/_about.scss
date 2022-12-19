@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+
+.about__card {
+  text-align: center;
+
+  @include breakpoint-up("very-small") {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.about__container {
+  --spacer: #{rem(24)};
+
+  padding: rem(80) var(--space-xs);
+}
+
+.about__image {
+  width: 100%;
+}

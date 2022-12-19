@@ -236,7 +236,7 @@ main:focus {
 }
 
 .flow > * + * {
-  margin-top: var(--space-xl);
+  margin-top: var(--spacer, var(--space-xl));
 }
 
 /**
@@ -411,6 +411,7 @@ audio:not([controls]) {
 
 .card {
   display: block;
+  overflow: hidden;
 }
 
 .card--rounded {
@@ -478,6 +479,30 @@ audio:not([controls]) {
     background-color: var(--light-peach);
     color: var(--white);
   }
+}
+
+.circle {
+  position: relative;
+}
+
+.circle::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("/svg/bg-pattern-small-circle.svg");
+  background-position: top left;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.circle--rotate-275deg::after {
+  transform: rotate(275deg);
+}
+
+.circle--rotate-90deg::after {
+  transform: rotate(90deg);
 }
 
 @media screen and (min-width: 59.375em) {
@@ -860,30 +885,6 @@ audio:not([controls]) {
   }
 }
 
-.features__image {
-  position: relative;
-}
-
-.features__image::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-image: url("/svg/bg-pattern-small-circle.svg");
-  background-position: top left;
-  width: 100%;
-  height: 100%;
-  content: "";
-}
-
-.features__image--rotate-275deg::after {
-  transform: rotate(275deg);
-}
-
-.features__image--rotate-90deg::after {
-  transform: rotate(90deg);
-}
-
 @media screen and (min-width: 42.5em) {
   .features__container {
     margin-left: 3rem;
@@ -952,6 +953,11 @@ audio:not([controls]) {
 .call-to-action__description {
   margin-top: 1rem;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 59.375em) {
+  .call-to-action__description {
+    margin-bottom: 0;
+  }
 }
 
 .champion__card {
@@ -1028,9 +1034,6 @@ audio:not([controls]) {
   }
 }
 
-.projects__card {
-  overflow: hidden;
-}
 @supports (display: grid) {
   .projects__card {
     display: grid;
@@ -1099,6 +1102,100 @@ audio:not([controls]) {
 
 .projects__description {
   text-transform: none;
+}
+
+.about__card {
+  text-align: center;
+}
+@media screen and (min-width: 59.375em) {
+  .about__card {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.about__container {
+  --spacer: 1.5rem;
+  padding: 5rem var(--space-xs);
+}
+
+.about__image {
+  width: 100%;
+}
+
+.information:nth-of-type(2) {
+  margin-top: 0;
+}
+@media screen and (min-width: 42.5em) {
+  .information:nth-of-type(2) {
+    margin-top: var(--space-xl);
+  }
+}
+
+.information__card {
+  text-align: center;
+}
+@media screen and (min-width: 59.375em) {
+  .information__card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.information__card--row-reverse {
+  flex-direction: row-reverse;
+}
+
+.information__container {
+  --spacer: 1.5rem;
+  padding: 5rem var(--space-xs);
+}
+
+.information__image {
+  width: 100%;
+}
+
+.information__title {
+  color: var(--peach);
+}
+
+.area {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 59.375em) {
+  .area {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.area__item {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 21.875rem;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.area__item:not(:first-child) {
+  margin-top: 1.875rem;
+}
+@media screen and (min-width: 59.375em) {
+  .area__item:not(:first-child) {
+    margin-top: 0;
+    margin-left: 1.875rem;
+  }
+}
+
+.area__title {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .footer {

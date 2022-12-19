@@ -1,0 +1,37 @@
+@use "../abstracts" as *;
+
+.information:nth-of-type(2) {
+  margin-top: 0;
+
+  @include breakpoint-up("tiny") {
+    margin-top: var(--space-xl);
+  }
+}
+
+.information__card {
+  text-align: center;
+
+  @include breakpoint-up("very-small") {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.information__card--row-reverse {
+  flex-direction: row-reverse;
+}
+
+.information__container {
+  --spacer: #{rem(24)};
+
+  padding: rem(80) var(--space-xs);
+}
+
+.information__image {
+  width: 100%;
+}
+
+.information__title {
+  color: var(--peach);
+}

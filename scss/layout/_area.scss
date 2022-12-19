@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+.area {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint-up("very-small") {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.area__item {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: rem(350);
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.area__item:not(:first-child) {
+  margin-top: rem(30);
+
+  @include breakpoint-up("very-small") {
+    margin-top: 0;
+    margin-left: rem(30);
+  }
+}
+
+.area__title {
+  margin-top: rem(48);
+  margin-bottom: rem(32);
+}
