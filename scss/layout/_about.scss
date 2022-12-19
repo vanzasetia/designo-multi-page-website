@@ -1,12 +1,16 @@
 @use "../abstracts" as *;
 
 .about__card {
+  background-image: url("/svg/bg-pattern-hero-about-mobile.svg");
+  background-position: top rem(185) right;
   text-align: center;
 
   @include breakpoint-up("very-small") {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    background-image: url("/svg/bg-pattern-hero-about-desktop.svg");
+    background-position: top rem(-165) left;
     text-align: left;
   }
 }

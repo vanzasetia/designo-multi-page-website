@@ -25,19 +25,21 @@
 
 .wrapper--home::after,
 .wrapper--home::before {
-  @include breakpoint-up("very-small") {
-    background-position: top rem(310) left;
-  }
+  background-position: top rem(310) left;
 }
 
 .wrapper--home::before {
-  @include breakpoint-up("very-small") {
-    transform: rotate(180deg);
-  }
+  transform: rotate(180deg);
 }
 
 .wrapper--sub-page {
-  @include breakpoint-up("very-small") {
-    background-position: top rem(135) left;
-  }
+  background-position: top rem(135) left;
+}
+
+.wrapper--about::after {
+  background-position: top rem(320) left;
+}
+
+.wrapper--about::before {
+  background-position: bottom rem(912) right rem(-396);
 }

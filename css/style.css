@@ -521,31 +521,32 @@ audio:not([controls]) {
     top: 0;
     left: 0;
     z-index: -1;
+    background-image: url("/svg/bg-pattern-leaf.svg");
     width: 100%;
     height: 100%;
     content: "";
   }
 }
 
-@media screen and (min-width: 59.375em) {
-  .wrapper--home::after,
-  .wrapper--home::before {
-    background-image: url("/svg/bg-pattern-leaf.svg");
-    background-position: top 19.375rem left;
-  }
+.wrapper--home::after,
+.wrapper--home::before {
+  background-position: top 19.375rem left;
 }
 
-@media screen and (min-width: 59.375em) {
-  .wrapper--home::before {
-    transform: rotate(180deg);
-  }
+.wrapper--home::before {
+  transform: rotate(180deg);
 }
 
-@media screen and (min-width: 59.375em) {
-  .wrapper--sub-page {
-    background-image: url("/svg/bg-pattern-leaf.svg");
-    background-position: top 8.4375rem left;
-  }
+.wrapper--sub-page {
+  background-position: top 8.4375rem left;
+}
+
+.wrapper--about::after {
+  background-position: top 20rem left;
+}
+
+.wrapper--about::before {
+  background-position: bottom 57rem right -24.75rem;
 }
 
 .header {
@@ -1105,6 +1106,8 @@ audio:not([controls]) {
 }
 
 .about__card {
+  background-image: url("/svg/bg-pattern-hero-about-mobile.svg");
+  background-position: top 11.5625rem right;
   text-align: center;
 }
 @media screen and (min-width: 59.375em) {
@@ -1112,6 +1115,8 @@ audio:not([controls]) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    background-image: url("/svg/bg-pattern-hero-about-desktop.svg");
+    background-position: top -10.3125rem left;
     text-align: left;
   }
 }
@@ -1135,18 +1140,25 @@ audio:not([controls]) {
 }
 
 .information__card {
+  background-image: url("/svg/bg-pattern-three-circles.svg");
+  background-position: bottom left;
   text-align: center;
 }
 @media screen and (min-width: 59.375em) {
   .information__card {
     display: flex;
     align-items: center;
+    background-position: bottom left 20.625rem;
     text-align: left;
   }
 }
 
-.information__card--row-reverse {
-  flex-direction: row-reverse;
+@media screen and (min-width: 59.375em) {
+  .information__card--row-reverse {
+    flex-direction: row-reverse;
+    background-image: url("/svg/bg-pattern-two-circles.svg");
+    background-position: bottom left;
+  }
 }
 
 .information__container {

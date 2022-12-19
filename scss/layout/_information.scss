@@ -9,17 +9,24 @@
 }
 
 .information__card {
+  background-image: url("/svg/bg-pattern-three-circles.svg");
+  background-position: bottom left;
   text-align: center;
 
   @include breakpoint-up("very-small") {
     display: flex;
     align-items: center;
+    background-position: bottom left rem(330);
     text-align: left;
   }
 }
 
 .information__card--row-reverse {
-  flex-direction: row-reverse;
+  @include breakpoint-up("very-small") {
+    flex-direction: row-reverse;
+    background-image: url("/svg/bg-pattern-two-circles.svg");
+    background-position: bottom left;
+  }
 }
 
 .information__container {
