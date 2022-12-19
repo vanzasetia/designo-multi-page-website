@@ -134,6 +134,10 @@ p:not([class]),
   }
 }
 
+p span {
+  display: block;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */
