@@ -38,4 +38,8 @@
 .call-to-action__description {
   margin-top: rem(16);
   margin-bottom: rem(32);
+
+  @include breakpoint-up("very-small") {
+    margin-bottom: 0;
+  }
 }
