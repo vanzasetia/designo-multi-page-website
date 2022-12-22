@@ -21,6 +21,8 @@ This is the place where I put all the resources that I find useful to build this
 
 It is worth knowing that `bg-pattern-design-pages-intro-tablet.svg` is the same background pattern as `bg-pattern-intro-web.svg`. The site uses the `bg-pattern-intro-web.svg` as the main background pattern for the web design card while using the other one as the default background pattern of the card (`.champion__card`).
 
+The screenshots are not the representing the actual look of the site. So, see the website to know the look of the site.
+
 ## References
 
 ### Web Documentation
