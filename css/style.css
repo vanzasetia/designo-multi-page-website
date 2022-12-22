@@ -224,6 +224,10 @@ p:not([class]),
   }
 }
 
+p span {
+  display: block;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */
@@ -1210,6 +1214,81 @@ audio:not([controls]) {
   margin-bottom: 2rem;
 }
 
+.locations {
+  --spacer: 2.5rem;
+}
+@media screen and (min-width: 42.5em) {
+  .locations {
+    --spacer: 7.5rem;
+  }
+}
+@media screen and (min-width: 59.375em) {
+  .locations {
+    --spacer: 1.875rem;
+  }
+}
+
+.locations__container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 42.5em) {
+  .locations__container {
+    gap: 1.875rem;
+  }
+}
+@media screen and (min-width: 59.375em) {
+  .locations__container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 59.375em) {
+  .locations__container--row-reverse\@very-small {
+    flex-direction: row-reverse;
+  }
+}
+
+.locations__map {
+  width: 100%;
+}
+
+.locations__card {
+  display: grid;
+  gap: 1.5rem;
+  background-image: url("/svg/bg-pattern-two-circles.svg");
+  background-position: bottom left;
+  padding: 5rem var(--space-xs);
+  text-align: center;
+}
+@media screen and (min-width: 42.5em) {
+  .locations__card {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+}
+@media screen and (min-width: 59.375em) {
+  .locations__card {
+    flex-grow: 1;
+  }
+}
+
+.locations__title {
+  color: var(--peach);
+}
+@media screen and (min-width: 42.5em) {
+  .locations__title {
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (min-width: 42.5em) {
+  .locations__description {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 .footer {
   --focus-outline-color: var(--white);
   --selection-background-color: var(--white);
@@ -1326,11 +1405,6 @@ audio:not([controls]) {
 .footer__address,
 .footer__contact {
   opacity: 0.5;
-}
-
-.footer__address span,
-.footer__contact span {
-  display: block;
 }
 
 .footer__social-media {
