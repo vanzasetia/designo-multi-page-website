@@ -1,9 +1,5 @@
 @use "../abstracts" as *;
 
-.call-to-action {
-  padding-bottom: rem(72);
-}
-
 .call-to-action__card {
   background-image: url("/svg/bg-pattern-call-to-action.svg");
   background-position: center right;

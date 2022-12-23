@@ -7,6 +7,7 @@
 
   position: relative;
   background-color: var(--black);
+  padding-top: rem(72);
   padding-bottom: rem(72);
   color: var(--white);
 }
@@ -21,6 +22,14 @@
   width: 100%;
   height: 100%;
   content: "";
+}
+
+.footer--no-call-to-action {
+  margin-top: var(--space-xl);
+}
+
+.footer--no-call-to-action::after {
+  display: none;
 }
 
 .footer__container {

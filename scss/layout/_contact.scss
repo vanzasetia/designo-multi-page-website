@@ -1,0 +1,90 @@
+@use "../abstracts" as *;
+
+.contact__card {
+  background-image: url("/svg/bg-pattern-hero-contact-mobile.svg");
+  background-position: top left;
+  padding: rem(50) var(--space-xs);
+
+  @include breakpoint-up("very-small") {
+    display: flex;
+    align-items: center;
+    gap: rem(40);
+    background-image: url("/svg/bg-pattern-hero-desktop.svg");
+    background-position: top rem(-160) left;
+  }
+}
+
+.contact__container {
+  text-align: center;
+
+  @include breakpoint-up("tiny") {
+    flex-basis: 100%;
+    text-align: left;
+  }
+}
+
+.contact__description {
+  margin-top: rem(32);
+
+  @include breakpoint-up("tiny") {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.contact__form {
+  --spacer: #{rem(24)};
+
+  margin-top: rem(40);
+
+  @include breakpoint-up("very-small") {
+    flex-basis: 100%;
+    margin-top: 0;
+  }
+}
+
+.contact__form-control {
+  position: relative;
+}
+
+.contact__input {
+  display: block;
+  border: none;
+  border-bottom: rem(1) solid var(--white);
+  background-color: transparent;
+  padding-right: rem(16);
+  padding-bottom: rem(10);
+  padding-left: rem(16);
+  width: 100%;
+  color: inherit;
+  font-weight: 500;
+}
+
+.contact__input.is-invalid {
+  background-image: url("/svg/icon-error.svg");
+  background-position: top right rem(16);
+}
+
+.contact__input:focus {
+  border-bottom-width: rem(3);
+}
+
+.contact__input::placeholder {
+  opacity: 0.5;
+  color: inherit;
+}
+
+.contact__alert {
+  margin-left: rem(16);
+  font-style: italic;
+}
+
+.contact__button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include breakpoint-up("tiny") {
+    margin-right: 0;
+  }
+}

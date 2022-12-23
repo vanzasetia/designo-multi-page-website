@@ -32,8 +32,21 @@
   transform: rotate(180deg);
 }
 
-.wrapper--sub-page {
+.wrapper--design-page::after {
   background-position: top rem(135) left;
+}
+
+.wrapper--design-page::before {
+  display: none;
+}
+
+.wrapper--contact::after {
+  top: rem(160);
+  background-position: bottom rem(-140) right;
+}
+
+.wrapper--contact::before {
+  display: none;
 }
 
 .wrapper--about::after {
