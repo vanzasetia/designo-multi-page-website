@@ -550,7 +550,9 @@ I managed to create it with pseudo-element and it was responsive with no media q
 
 The site can work even when the users disable JavaScript. You can try it yourself.
 
-First, if the mobile users enable JavaScript, they get a hamburger menu. If they disable the JavaScript, they get visible navigation or a horizontal menu.
+If mobile users enable JavaScript, they get a hamburger menu. If they disable JavaScript, they get visible navigation or a horizontal menu.
+
+Next, if the users enable JavaScript, they get custom form validation. If they disable JavaScript, they get native HTML form validation.
 
 ### Useful Resources
 
