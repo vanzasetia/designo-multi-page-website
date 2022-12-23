@@ -1,4 +1,4 @@
-![](./images/banner.jpg)
+![Banner. It's done! Designo Multi-Page Website. Challenge by Frontend Mentor. Coded by Vanza Setia.](./images/banner.jpg)
 
 <p align="left">
   <a href="https://www.frontendmentor.io/challenges?difficulties=5"><img src="https://img.shields.io/badge/Difficulty-Guru-ED2C49?style=for-the-badge&logo=frontendmentor" alt="Challenge Difficulty - Guru"></a>
