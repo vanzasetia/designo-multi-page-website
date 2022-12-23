@@ -76,6 +76,12 @@ The screenshots are not the representing the actual look of the site. So, see th
 
 - [The W3C Markup Validation Service](https://validator.w3.org/)
   - [Showing results for https://officialdesigno.netlify.app/ - Nu Html Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofficialdesigno.netlify.app%2F)
+  - [Showing results for https://officialdesigno.netlify.app/about.html - Nu Html Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofficialdesigno.netlify.app%2Fabout.html)
+  - [Showing results for https://officialdesigno.netlify.app/locations.html - Nu Html Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofficialdesigno.netlify.app%2Flocations.html)
+  - [Showing results for https://officialdesigno.netlify.app/contact.html - Nu Html Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofficialdesigno.netlify.app%2Fcontact.html)
+  - [Showing results for https://officialdesigno.netlify.app/web-design.html - Nu Html Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofficialdesigno.netlify.app%2Fweb-design.html)
+  - [Showing results for https://officialdesigno.netlify.app/app-design.html - Nu Html Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofficialdesigno.netlify.app%2Fapp-design.html)
+  - [Showing results for https://officialdesigno.netlify.app/graphic-design.html - Nu Html Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofficialdesigno.netlify.app%2Fgraphic-design.html)
 - [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - [W3C CSS Validator results for https://officialdesigno.netlify.app/ (CSS level 3 + SVG)](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fofficialdesigno.netlify.app%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - [Checklist - The A11Y Project](https://www.a11yproject.com/checklist/)
 - [GTmetrix | Website Performance Testing and Monitoring](https://gtmetrix.com/) - [Latest Performance Report for: https://officialdesigno.netlify.app/ | GTmetrix](https://gtmetrix.com/reports/officialdesigno.netlify.app/oagG3cFj/)
