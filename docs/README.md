@@ -37,6 +37,7 @@ The screenshots are not the representing the actual look of the site. So, see th
 - [CSS API update  |  Google Fonts  |  Google Developers #optimizing_your_font_requests](https://developers.google.com/fonts/docs/css2#optimizing_your_font_requests) - Use the `text=` to get necessary bold font.
 - [`<picture>`: The Picture element - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)
 - [`:nth-of-type()` - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type) - I used this to make the first `.information` has no `margin-top` on mobile breakpoint.
+- [Basic writing and formatting syntax - GitHub Docs #specifying-the-theme-an-image-is-shown-to](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#specifying-the-theme-an-image-is-shown-to)
 
 ### Articles
 
@@ -48,6 +49,7 @@ The screenshots are not the representing the actual look of the site. So, see th
   - We remove focus styles from the `<main>` element because when someone activates the skip link from before, it programatically focuses the `<main>` because it’s the `:target`. The focus ring is unnecessary though, because making the `<main>` focusable, programatically, is purely for making tabbing on the keyboard more predictable for users who want to skip navigation. If we didn’t move focus, they could end up in a situation where hitting the tab key sends them back up the the navigation!
   - What’s handy with this approach is that using `tabindex="-1"` prevents the user from being able to tab to the element with their keyboard too, so it’s really helpful with focus management of interactive elements, which we’ll get on to later in this tutorial.
 - [Landmark Regions | APG | WAI | W3C](https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/) - If a specific landmark role is used more than once on a page, provide each instance of that landmark with a unique label.
+- [WebAIM: Usable and Accessible Form Validation and Error Recovery](https://webaim.org/techniques/formvalidation/)
 
 ### Tools
 
@@ -68,6 +70,7 @@ The screenshots are not the representing the actual look of the site. So, see th
 - [Pixel and REM Converter](https://pixelandrem.netlify.app/) - If I forget about the pixel of value of the `clamp` functions (fluid space), I will use this tool.
 - [Site-Shot - Capture a Website screenshot via API](https://www.site-shot.com/) - Take full screenshot of each page.
 - [Squoosh](https://squoosh.app/) - Optimize the file sizes of the screenshots.
+- [RegExr: Learn, Build, & Test RegEx](https://regexr.com/) - Improve the email regular expression by removing `{1}`.
 
 ### Validations
 
