@@ -1563,3 +1563,39 @@ audio:not([controls]) {
 .footer__external-link:not(:first-child) {
   margin-left: 1rem;
 }
+
+.attribution {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.attribution__description {
+  margin-right: 0;
+  margin-left: 0;
+  max-width: 100%;
+}
+
+.attribution__link {
+  letter-spacing: 0;
+  text-decoration: underline 0.1em solid;
+  text-underline-offset: 0.1em;
+  text-transform: none;
+}
+@media (hover: none) {
+  .attribution__link {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  .attribution__link:active {
+    text-decoration: none;
+  }
+}
+@media (-ms-high-contrast: none),
+  (-ms-high-contrast: active),
+  (-moz-touch-enabled: 0),
+  (hover: hover) {
+  .attribution__link:hover {
+    text-decoration: none;
+  }
+}

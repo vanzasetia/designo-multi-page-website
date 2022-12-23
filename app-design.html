@@ -326,7 +326,12 @@
         </div>
       </div>
     </main>
-    <footer class="footer js-landmark" role="contentinfo">
+    <footer
+      class="footer js-landmark"
+      aria-labelledby="footer-site"
+      role="contentinfo"
+    >
+      <p id="footer-site" hidden>Site</p>
       <div class="container container--padding">
         <div class="footer__container footer__line">
           <a href="/" class="footer__home">
@@ -387,6 +392,24 @@
             </a>
           </div>
         </div>
+      </div>
+    </footer>
+    <footer
+      class="attribution"
+      aria-labelledby="attribution"
+      role="contentinfo"
+    >
+      <p id="attribution" hidden>Frontend Mentor attribution</p>
+      <div class="container container--padding">
+        <p class="attribution__description">
+          Challenge by
+          <a class="attribution__link" href="https://www.frontendmentor.io"
+            >Frontend Mentor</a
+          >. Coded by
+          <a class="attribution__link" href="https://github.com/vanzasetia"
+            >Vanza Setia</a
+          >.
+        </p>
       </div>
     </footer>
     <script src="/js/vendors/instant-page.min.js" type="module"></script>
