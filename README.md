@@ -53,7 +53,7 @@ My users should be able to:
 ### Links
 
 - [Live Review](https://officialdesigno.netlify.app/)
-- [Frontend Mentor Solution Page]()
+- [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/designo-multipage-website-c6gfVhLZLm)
 
 ## My Process
 
@@ -314,9 +314,7 @@ Also, because of the way the menu is treated where the users should not be able 
 
 So, I could not solve the issue. If anyone knows how to solve the problem or wants to discuss this with me, please do let me know. We can have a discussion on the solution page.
 
-<!-- TODO: Add solution page URL -->
-
-Discuss the issue with me — []()
+Discuss the issue with me — [Frontend Mentor | Responsive Designo Multi-Page Website with Grid and Flexbox coding challenge solution](https://www.frontendmentor.io/solutions/designo-multipage-website-c6gfVhLZLm)
 
 #### Responsive Grid on Design Pages with No Media Queries
 
