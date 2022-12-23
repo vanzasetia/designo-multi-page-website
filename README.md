@@ -558,6 +558,7 @@ Next, if the users enable JavaScript, they get custom form validation. If they d
 
 - [Ten modern layouts in one line of CSS | web.dev](https://web.dev/one-line-layouts/) - There ten modern CSS code snippets. I used the "Sidebar Says" code snippet to create the layout for the `feature__item` on the tablet design.
 - [Frontend Mentor | Responsive Multi-Page Website with Grid and Flexbox coding challenge solution](https://www.frontendmentor.io/solutions/responsive-multipage-website-with-grid-and-flexbox-MgG8IlyIbc) - This is my previous solution before this one. It helped me to create the hamburger menu. I would say that my past self help me create it. So, by the time I was building it for this challenge, most of it I did copy-paste from the previous solution.
+- [How To Create Accessible Form with Boring Design? - CodeNewbie Community 🌱](https://community.codenewbie.org/vanzasetia/how-to-create-accessible-form-with-boring-design-4ab0) - This is my article about creating accessible form by using some ARIA attributes to enhance the experience of the users of assistive technology. It helped me to implement the form validation for this website.
 
 ## Author
 
