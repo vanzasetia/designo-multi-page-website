@@ -567,6 +567,9 @@ Next, if the users enable JavaScript, they get custom form validation. If they d
 
 ## Acknowledgements
 
+Grace Snow answered all my questions in the Frontend Mentor's Slack community. Thank you very much, Grace!
+
+See her profile — [Frontend Mentor | Grace's profile](https://www.frontendmentor.io/profile/grace-snow)
 
 ## License
 
