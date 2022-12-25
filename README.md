@@ -206,36 +206,6 @@ Then, I added `aria-controls` to the `<button>` to tell screen readers that this
 <ul id="menu-list">
 ```
 
-Next, I added `role="menu"` to the `<ul>` so the screen readers pronounce it as a menu. Then, I gave each `<li>` a `role="presentation"` to remove the list semantic meaning. Finally, I added `role="menuitem"` to each `<a>`.
-
-```html
-<ul id="menu-list" role="menu">
-  <li role="presentation">
-    <a href="/about.html" role="menuitem">
-      Our Company
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="/locations.html" role="menuitem">
-      Locations
-    </a>
-  </li>
-  <li role="presentation">
-    <a href="/contact.html" role="menuitem">
-      Contact
-    </a>
-  </li>
-</ul>
-```
-
-I knew this from the Inclusive Components article to create menu.
-
-"A true menu (in the WAI-ARIA sense) should identify itself as such using the menu role (for the container) and, typically, menuitem children (other child roles may apply). These parent and child roles work together to provide information to assistive technologies." — [Menus & Menu Buttons](https://inclusive-components.design/menus-menu-buttons/)
-
-The example ARIA Authoring Practices Guide (APG) website does the same thing.
-
-See the example — [Navigation Menu Button Example | APG | WAI | W3C](https://www.w3.org/WAI/ARIA/apg/example-index/menu-button/menu-button-links.html)
-
 HTML was done. Now, I needed to take care of the styling.
 
 I needed to use fixed positioning and then style the links. Then, set the background color of the menu which was black. After that, I added some `padding` to prevent the links from touching the edges of the browser. After I had done styling the menu, I needed to hide the menu.
@@ -249,7 +219,7 @@ Learn more about accessibility tree — [The Accessibility Tree](https://web.dev
 I used `visibility` property to hide the menu. This way, I could use `transition`. Then, I set `transform: translateY(-100%)` to make it move outside of the browser's window.
 
 ```css
-/* <ul id="menu-list" class="header__list" role="menu"> */
+/* <ul id="menu-list" class="header__list"> */
 .header__list {
   transform: translateY(-100%);
   visibility: hidden;
@@ -269,7 +239,7 @@ Learn more — [General sibling combinator - CSS: Cascading Style Sheets | MDN](
 ```css
 /**
  * <button type="button" class="header__menu-button" aria-expanded="true">
- * <ul id="menu-list" class="header__list" role="menu">
+ * <ul id="menu-list" class="header__list">
  */
 .header__menu-button[aria-expanded="true"] ~ .header__list {
   transform: translate(0);
