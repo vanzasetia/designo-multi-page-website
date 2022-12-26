@@ -50,6 +50,7 @@ The screenshots are not the representing the actual look of the site. So, see th
   - What’s handy with this approach is that using `tabindex="-1"` prevents the user from being able to tab to the element with their keyboard too, so it’s really helpful with focus management of interactive elements, which we’ll get on to later in this tutorial.
 - [Landmark Regions | APG | WAI | W3C](https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/) - If a specific landmark role is used more than once on a page, provide each instance of that landmark with a unique label.
 - [WebAIM: Usable and Accessible Form Validation and Error Recovery](https://webaim.org/techniques/formvalidation/)
+- ["Fixing" Lists | scottohara.me](https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html) - As [Adrian Roselli notes on Twitter](https://twitter.com/aardrian/status/1083889915417559040) a lack of list semantics “…may not be a big deal unless user testing says you really need a list.”
 
 ### Tools
 
