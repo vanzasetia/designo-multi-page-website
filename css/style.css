@@ -1464,6 +1464,9 @@ audio:not([controls]) {
   justify-self: flex-end;
 }
 
+.footer__list {
+  list-style: none;
+}
 @media screen and (min-width: 42.5em) {
   .footer__list {
     display: flex;

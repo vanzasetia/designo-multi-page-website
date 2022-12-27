@@ -76,6 +76,8 @@
 }
 
 .footer__list {
+  list-style: none;
+
   @include breakpoint-up("tiny") {
     display: flex;
   }
