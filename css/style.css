@@ -256,7 +256,7 @@ a {
   display: none !important;
 }
 
-.skip-content {
+[href="#main"] {
   display: inline-block;
   position: fixed;
   top: 3rem;
@@ -267,16 +267,15 @@ a {
   padding: 1em 2em;
   color: var(--white);
   font-size: 1.25rem;
-  text-decoration: 0.1em solid;
 }
 @media (prefers-reduced-motion: no-preference) {
-  .skip-content {
+  [href="#main"] {
     transition: transform var(--transition-base);
   }
 }
 
-.skip-content:focus,
-.skip-content:focus-visible {
+[href="#main"]:focus,
+[href="#main"]:focus-visible {
   transform: translate(0);
   outline: 0.2em solid var(--peach);
   outline-offset: 0.25em;
