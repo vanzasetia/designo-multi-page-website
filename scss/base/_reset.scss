@@ -81,11 +81,6 @@
   @include focus-styling(var(--focus-outline-color, var(--black)));
 }
 
-/**
- * To hide content visually.
- * For more information: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
- */
-
 .sr-only {
   position: absolute !important;
   clip-path: inset(50%) !important;
@@ -99,9 +94,11 @@
 }
 
 body {
+  min-height: 100vh;
   color: var(--black);
   line-height: 1.625;
   font-family: Jost, sans-serif;
+  text-rendering: optimizeSpeed;
 }
 
 body.is-menu-open {
@@ -167,15 +164,7 @@ p span {
   display: block;
 }
 
-/**
- * Render the `main` element consistently in IE.
- */
-
-main {
-  display: block;
-}
-
-main:focus {
+[tabindex="-1"]:focus {
   outline: none;
 }
 
@@ -183,14 +172,29 @@ main:focus {
   margin-top: var(--spacer, var(--space-xl));
 }
 
-/**
- * 1. Remove the border on images inside links in IE 10.
- */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+svg {
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+svg path {
+  fill: currentColor;
+}
 
 img,
 picture {
   display: block;
-  border-style: none; /* 1 */
   max-width: 100%;
 }
 
@@ -198,30 +202,12 @@ img {
   height: auto;
 }
 
-/** 
- * Avoid overloading a user with 
- * sound from a video that 
- * autoplays when the page is loaded.
- *
- * Source: https://github.com/AllThingsSmitty/css-protips#hide-autoplay-videos-that-arent-muted
- */
-
-video[autoplay]:not([muted]) {
-  display: none;
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
-
-/**
- * Set font-size on Form Elements for a 
- * Better Mobile Experience
- *
- * To avoid mobile browsers (iOS Safari,
- * et al.) from zooming in on HTML form 
- * elements when a <select> drop-down is
- * tapped, add font-size to the selector
- * rule.
- *
- * Source: https://github.com/AllThingsSmitty/css-protips#set-font-size-on-form-elements-for-a-better-mobile-experience
- */
 
 input[type="text"],
 input[type="number"],
@@ -230,16 +216,20 @@ textarea {
   font-size: 1rem;
 }
 
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline-offset: 0;
+}
+
 button[type] {
   cursor: pointer;
 }
 
-/**
- * 1. Remove the gray background on active links in IE 10.
- */
-
 a {
-  background-color: transparent; /* 1 */
   color: inherit;
   letter-spacing: 0.125em;
   text-decoration-color: transparent;
@@ -255,54 +245,6 @@ a {
   text-transform: uppercase;
 }
 
-svg {
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  overflow: hidden;
-}
-
-/** 
- * Inherit the color 
- */
-
-svg path {
-  fill: currentColor;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-  position: relative;
-  vertical-align: baseline;
-  font-size: 75%;
-  line-height: 0;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/**
- * Add the correct display in IE 10+.
- */
-
-template {
-  display: none;
-}
-
-audio:not([controls]) {
-  display: none;
-}
-
 [inert] {
   cursor: default;
   pointer-events: none;
@@ -311,4 +253,8 @@ audio:not([controls]) {
 [inert],
 [inert] * {
   user-select: none;
+}
+
+[hidden] {
+  display: none !important;
 }

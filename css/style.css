@@ -1,94 +1,3 @@
-/*  Modern CSS reset - https://piccalil.li/blog/a-modern-css-reset/ */
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-}
-/* Source: https://github.com/h5bp/html5-boilerplate/blob/main/dist/css/style.css */
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/**
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-/**
- * DISCLAIMER!
- * I had added some changes based on my preference.
- * This is not the original styling!
- */
-/**
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- */
-::selection {
-  text-shadow: none;
-}
-
-/**
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/**
- * Remove default fieldset styles.
- */
-fieldset {
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
-
-/**
- * Don't allow horizontal resizing of textareas.
- */
-textarea {
-  resize: vertical;
-}
-
 @font-face {
   font-style: normal;
   font-weight: 700;
@@ -167,10 +76,6 @@ textarea {
   outline-offset: 0.3125rem;
 }
 
-/**
- * To hide content visually.
- * For more information: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
- */
 .sr-only {
   position: absolute !important;
   clip-path: inset(50%) !important;
@@ -184,9 +89,11 @@ textarea {
 }
 
 body {
+  min-height: 100vh;
   color: var(--black);
   line-height: 1.625;
   font-family: Jost, sans-serif;
+  text-rendering: optimizeSpeed;
 }
 
 body.is-menu-open {
@@ -254,14 +161,7 @@ p span {
   display: block;
 }
 
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block;
-}
-
-main:focus {
+[tabindex="-1"]:focus {
   outline: none;
 }
 
@@ -269,13 +169,29 @@ main:focus {
   margin-top: var(--spacer, var(--space-xl));
 }
 
-/**
- * 1. Remove the border on images inside links in IE 10.
- */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+svg {
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+svg path {
+  fill: currentColor;
+}
+
 img,
 picture {
   display: block;
-  border-style: none; /* 1 */
   max-width: 100%;
 }
 
@@ -283,29 +199,13 @@ img {
   height: auto;
 }
 
-/** 
- * Avoid overloading a user with 
- * sound from a video that 
- * autoplays when the page is loaded.
- *
- * Source: https://github.com/AllThingsSmitty/css-protips#hide-autoplay-videos-that-arent-muted
- */
-video[autoplay]:not([muted]) {
-  display: none;
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
-/**
- * Set font-size on Form Elements for a 
- * Better Mobile Experience
- *
- * To avoid mobile browsers (iOS Safari,
- * et al.) from zooming in on HTML form 
- * elements when a <select> drop-down is
- * tapped, add font-size to the selector
- * rule.
- *
- * Source: https://github.com/AllThingsSmitty/css-protips#set-font-size-on-form-elements-for-a-better-mobile-experience
- */
 input[type="text"],
 input[type="number"],
 select,
@@ -313,15 +213,20 @@ textarea {
   font-size: 1rem;
 }
 
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline-offset: 0;
+}
+
 button[type] {
   cursor: pointer;
 }
 
-/**
- * 1. Remove the gray background on active links in IE 10.
- */
 a {
-  background-color: transparent; /* 1 */
   color: inherit;
   letter-spacing: 0.125em;
   text-decoration-color: transparent;
@@ -337,51 +242,6 @@ a {
   text-transform: uppercase;
 }
 
-svg {
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  overflow: hidden;
-}
-
-/** 
- * Inherit the color 
- */
-svg path {
-  fill: currentColor;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  position: relative;
-  vertical-align: baseline;
-  font-size: 75%;
-  line-height: 0;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
-}
-
-audio:not([controls]) {
-  display: none;
-}
-
 [inert] {
   cursor: default;
   pointer-events: none;
@@ -390,6 +250,10 @@ audio:not([controls]) {
 [inert],
 [inert] * {
   user-select: none;
+}
+
+[hidden] {
+  display: none !important;
 }
 
 .skip-content {
