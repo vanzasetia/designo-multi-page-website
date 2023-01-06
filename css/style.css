@@ -89,6 +89,32 @@ textarea {
   resize: vertical;
 }
 
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  src: local("Jost"), local("Jost Bold"), local("Jost-Bold"),
+    url("/fonts/JostBold.woff2") format("woff2");
+  font-family: Jost;
+  font-display: swap;
+}
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  src: local("Jost"), local("Jost Medium"), local("Jost-Medium"),
+    url("/fonts/JostMedium.woff2") format("woff2"),
+    url("/fonts/JostMedium.woff") format("woff");
+  font-family: Jost;
+  font-display: swap;
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  src: local("Jost"), local("Jost Regular"), local("Jost-Regular"),
+    url("/fonts/JostRegular.woff2") format("woff2"),
+    url("/fonts/JostRegular.woff") format("woff");
+  font-family: Jost;
+  font-display: swap;
+}
 :root {
   --peach: hsl(11deg 73% 66%);
   --light-grayish-peach: hsl(14deg 76% 97%);

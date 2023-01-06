@@ -11,28 +11,7 @@
     <script>
       document.documentElement.className = "js";
     </script>
-    <!-- 
-    Directly used the preloaded font family
-    to prevent producing warning messages in the console
-    -->
-    <!-- prettier-ignore -->
-    <style>@font-face{font-family:"Jost";font-style:normal;font-weight:700;font-display:swap;src:local("Jost"), local("Jost Bold"), local("Jost-Bold"), url("/fonts/JostBold.woff2") format("woff2")}@font-face{font-family:"Jost";font-style:normal;font-weight:500;font-display:swap;src:local("Jost"), local("Jost Medium"), local("Jost-Medium"), url("/fonts/JostMedium.woff2") format("woff2"), url("/fonts/JostMedium.woff") format("woff")}@font-face{font-family:"Jost";font-style:normal;font-weight:400;font-display:swap;src:local("Jost"), local("Jost Regular"), local("Jost-Regular"), url("/fonts/JostRegular.woff2") format("woff2"), url("/fonts/JostRegular.woff") format("woff")}</style>
     <link rel="stylesheet" href="/css/style.min.css" />
-    <!-- Preload Font Family To Prevent Shifting Layout -->
-    <link
-      rel="preload"
-      href="/fonts/JostMedium.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/fonts/JostRegular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
     <script src="/js/app.min.js" defer></script>
     <script src="/js/vendors/inert-polyfill.min.js" defer></script>
     <script
@@ -41,7 +20,6 @@
       defer
       data-website-id="2c304939-0f9d-4b4b-8299-51bc3f738772"
     ></script>
-    <!-- Favicons -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
