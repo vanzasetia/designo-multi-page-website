@@ -1,20 +1,5 @@
 # Documentation
 
-[(Back to home)](https://github.com/vanzasetia/designo-multi-page-website#readme)
-
-## Table of contents
-
-- [Overview](#overview)
-- [Notes](#notes)
-- [References](#references)
-  - [Web Documentation](#web-documentation)
-  - [Articles](#articles)
-  - [Tools](#tools)
-  - [Validation](#validation)
-  - [Others](#others)
-
-## Overview
-
 This is the place where I put all the resources that I find useful to build this project. This can be used for future reference or help anyone that is doing this challenge.
 
 ## Notes
@@ -23,9 +8,7 @@ It is worth knowing that `bg-pattern-design-pages-intro-tablet.svg` is the same 
 
 The screenshots are not the representing the actual look of the site. So, see the website to know the look of the site.
 
-## References
-
-### Web Documentation
+## Web Documentation
 
 - [`<footer>` - HTML: HyperText Markup Language | MDN #accessibility_concerns](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#accessibility_concerns) - Prior to the release of Safari 13, the `contentinfo` [landmark role](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics#signpostslandmarks) was not properly exposed by [VoiceOver](https://help.apple.com/voiceover/info/guide/). If needing to support legacy Safari browsers, add `role="contentinfo"` to the footer element to ensure the landmark will be properly exposed.
 - [HTML Standard #the-address-element](https://html.spec.whatwg.org/multipage/sections.html#the-address-element) - The `address` element must not be used to represent arbitrary addresses (e.g. postal addresses), unless those addresses are in fact the relevant contact information. (The `p` element is the appropriate element for marking up postal addresses in general.)
@@ -39,7 +22,7 @@ The screenshots are not the representing the actual look of the site. So, see th
 - [`:nth-of-type()` - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type) - I used this to make the first `.information` has no `margin-top` on mobile breakpoint.
 - [Basic writing and formatting syntax - GitHub Docs #specifying-the-theme-an-image-is-shown-to](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#specifying-the-theme-an-image-is-shown-to)
 
-### Articles
+## Articles
 
 - [Contextually Marking up accessible images and SVGs](https://www.scottohara.me/blog/2019/05/22/contextual-images-svgs-and-a11y.html)
   - Prior to macOS 10.14.4, `aria-hidden="true"` would also be necessary to completely hide a decorative image to VoiceOver when paired with Chrome. Without the ARIA attribute, VoiceOver would still focus the image, but provide no announcement.
@@ -52,7 +35,7 @@ The screenshots are not the representing the actual look of the site. So, see th
 - [WebAIM: Usable and Accessible Form Validation and Error Recovery](https://webaim.org/techniques/formvalidation/)
 - ["Fixing" Lists | scottohara.me](https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html) - As [Adrian Roselli notes on Twitter](https://twitter.com/aardrian/status/1083889915417559040) a lack of list semantics “…may not be a big deal unless user testing says you really need a list.”
 
-### Tools
+## Tools
 
 - [SVGOMG - SVGO's Missing GUI](https://jakearchibald.github.io/svgomg/) - Optimize icon from IcoMoon.
 - [Canva](https://www.canva.com/) - Design the favicon and other things.
@@ -73,7 +56,7 @@ The screenshots are not the representing the actual look of the site. So, see th
 - [Squoosh](https://squoosh.app/) - Optimize the file sizes of the screenshots.
 - [RegExr: Learn, Build, & Test RegEx](https://regexr.com/) - Improve the email regular expression by removing `{1}`.
 
-### Validations
+## Validations
 
 - [The W3C Markup Validation Service](https://validator.w3.org/)
   - [Showing results for https://officialdesigno.netlify.app/ - Nu Html Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofficialdesigno.netlify.app%2F)
@@ -91,7 +74,14 @@ The screenshots are not the representing the actual look of the site. So, see th
 - [The Front-End Checklist - ✨ Your best Front-End Tool ✨](https://frontendchecklist.io/)
 - [WebPageTest - Website Performance and Optimization Test](https://www.webpagetest.org/) - [officialdesigno.net...irginia USA - EC2 - WebPageTest Result](https://www.webpagetest.org/result/221208_BiDc43_8WC/)
 
-### Others
+## Map locations
+
+- [3886 Wellington Street Toronto Ontario | OpenStreetMap](https://www.openstreetmap.org/search?query=3886%20Wellington%20Street%20Toronto%20Ontario#map=19/43.64651/-79.38355)
+- [19 Balonne Street New South Wales | OpenStreetMap](https://www.openstreetmap.org/search?query=19%20Balonne%20Street%20New%20South%20Wales#map=17/-30.31998/149.78324)
+- [13 Colorado Way United Kingdom | OpenStreetMap](https://www.openstreetmap.org/search?query=13%20Colorado%20Way%20United%20Kingdom#map=17/53.70970/-1.34114)
+- [Rhyd-y-fro United Kingdom | OpenStreetMap](https://www.openstreetmap.org/search?query=Rhyd-y-fro%20United%20Kingdom#map=13/51.7372/-3.8669)
+
+## Others
 
 - [Frontend Mentor | Designo multi-page website coding challenge](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT)
 - [Icon Font & SVG Icon Sets ❍ IcoMoon](https://icomoon.io/) - Get an icon for the website's favicon.

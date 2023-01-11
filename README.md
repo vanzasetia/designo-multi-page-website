@@ -1,40 +1,12 @@
 ![Banner. It's done! Designo Multi-Page Website. Challenge by Frontend Mentor. Coded by Vanza Setia.](./images/banner.jpg)
 
-<p align="left">
-  <a href="https://www.frontendmentor.io/challenges?difficulties=5"><img src="https://img.shields.io/badge/Difficulty-Guru-ED2C49?style=for-the-badge&logo=frontendmentor" alt="Challenge Difficulty - Guru"></a>
-  <img alt="Repo size" src="https://img.shields.io/github/repo-size/vanzasetia/designo-multi-page-website?style=for-the-badge&logo=github">
-  <a href="https://twitter.com/vanzasetia"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter - Vanza Setia" /></a>
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/vanzasetia/designo-multi-page-website?style=for-the-badge&logo=git">
-  <img alt="Netlify" src="https://img.shields.io/netlify/d2056645-4d19-4874-a300-ef1c292ff3a5?style=for-the-badge&logo=netlify">
-  <img alt="MIT License" src="https://img.shields.io/github/license/vanzasetia/designo-multi-page-website?color=green&style=for-the-badge&logo=github">
-</p>
-
 # Designo Multi-Page Website
-
-## Table of Contents
-
-- [Overview](#overview)
-  - [Introduction](#introduction)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
-- [References](#references)
-
-## Overview
-
-### Introduction
 
 I did this project to sharpen my HTML and CSS skills. It was the first time I created a 7-page website. I hoped this project proved that now I am ready to work in the professional world.
 
 Now about this `README`, I wrote everything starting from tools that I used, useful articles, what I had learned, and much more.
 
-### The Challenge
+## The challenge
 
 My challenge is to build out this multi-page website and get it looking as close to the design as possible.
 
@@ -50,14 +22,13 @@ My users should be able to:
 - Understand and be able to navigate page content while using assistive technology
 - Access the website without JavaScript
 
-### Links
+## Links
 
 - [Live Review](https://officialdesigno.netlify.app/)
 - [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/designo-multipage-website-c6gfVhLZLm)
+- [Documentation](./docs/README.md)
 
-## My Process
-
-### Built With
+## Built with
 
 - HTML Semantic Tags
 - [BEM (Block, Element, Modifier)](https://sparkbox.com/foundry/bem_by_example)
@@ -69,13 +40,16 @@ My users should be able to:
 - Fluid Space
 - Mobile-first workflow
 - No-motion-first approach to animations - Learn more — [prefers-reduced-motion: Taking a no-motion-first approach to animations](https://www.tatianamac.com/posts/prefers-reduced-motion)
+- [Leaflet - a JavaScript library for interactive maps](https://leafletjs.com/)
 - [instantpage/instant.page](https://github.com/instantpage/instant.page) - Preload pages only when the users interact with the link.
 - [scriptex/hover-media-query](https://github.com/scriptex/hover-media-query) - A progressively enhanced "hover" media query.
 - [GoogleChrome/inert-polyfill](https://github.com/GoogleChrome/inert-polyfill) - Polyfill for the HTML `inert` attribute. (modified)
 
-### What I Learned
+## What I learned
 
-#### Labeling Navigation Landmarks
+I learned a lot of things when I was building this project. I hope this can be useful for you and my future self.
+
+### Labeling navigation landmarks
 
 It is important to know that there are two navigation landmarks. Narrator listed both navigation landmarks as "navigation". This can confuse screen reader users because they can think of it as duplicate content.
 
@@ -109,7 +83,7 @@ By the way, I could use `aria-label` to do that. But, the value of it does not a
 
 Read more — [aria-label Does Not Translate](https://adrianroselli.com/2019/11/aria-label-does-not-translate.html)
 
-#### Hamburger Menu Is Not The Ultimate Solution
+### Hamburger menu is not the ultimate solution
 
 Hamburger menu is a button with three horizontal lines. It is used to hide navigation options (usually for mobile users). When it is clicked it opens navigation links.
 
@@ -123,7 +97,7 @@ As a developer, I prefer visible navigation. It does not need a lot of styling. 
 
 "Less is more." — Ludwig Mies van der Rohe
 
-#### How to Create a Hamburger Menu?
+### How to create a hamburger menu?
 
 I had seen that people have two HTML markups for the navigation links. One markup for the hamburger menu and one markup for visible navigation. Usually, they have a `hide-on-desktop` and `hide-on-mobile` classes. 
 
@@ -274,7 +248,7 @@ onLargeScreen.addEventListener("change", closeMenu);
 
 So, when the users' screen size is changed, it will run the `closeMenu()` function. Then, it will remove the `is-menu-open` styling — `body.is-menu-open { overflow: hidden }`. Now, the page is scrollable when the opened hamburger menu turns into visible navigation.
 
-#### Hamburger Menu Has a Problem
+### Hamburger menu has a problem
 
 If you increase the zoom level to 250%, the "CONTACT" link is not visible. You can not scroll to see the link.
 
@@ -286,7 +260,7 @@ So, I could not solve the issue. If anyone knows how to solve the problem or wan
 
 Discuss the issue with me — [Frontend Mentor | Responsive Designo Multi-Page Website with Grid and Flexbox coding challenge solution](https://www.frontendmentor.io/solutions/designo-multipage-website-c6gfVhLZLm)
 
-#### Responsive Grid on Design Pages with No Media Queries
+### Responsive grid on design pages with no media queries
 
 At first, I was building the section with CSS Grid, Flexbox, and media queries. Later, I managed to create a responsive grid layout with no media queries.
 
@@ -447,7 +421,7 @@ As for the image, there was nothing to worry about it since CSS Grid would take 
 
 This result is a responsive layout for both the container of the cards and the card with no media queries.
 
-#### Card Above Footer
+### Card above footer
 
 ![](./screenshots/card-above-footer.png)
 
@@ -493,7 +467,7 @@ Third, I used a pseudo-element from the `<footer>` to make black background belo
 
 Now, you can see the result by visiting the site. It is responsive with no media query and works on all screen sizes.
 
-#### Fake Horizontal Rule
+### Fake horizontal rule
 
 There is a horizontal line in the `<footer>`. It is one pixel height (`0.0625rem`) and has 10% opacity. I was hard to notice. But, it was easy to create.
 
@@ -514,7 +488,7 @@ I managed to create it with pseudo-element and it was responsive with no media q
 }
 ```
 
-#### No JavaScript, No Problem
+### No JavaScript, no problem
 
 The site can work even when the users disable JavaScript. You can try it yourself.
 
@@ -522,7 +496,9 @@ If mobile users enable JavaScript, they get a hamburger menu. If they disable Ja
 
 Next, if the users enable JavaScript, they get custom form validation. If they disable JavaScript, they get native HTML form validation.
 
-### Useful Resources
+After that, if the users on the location page with JavaScript enabled, they get decorative leaflet maps. If they disable JavaScript, they get static images for the maps.
+
+## Useful resources
 
 - [Ten modern layouts in one line of CSS | web.dev](https://web.dev/one-line-layouts/) - There ten modern CSS code snippets. I used the "Sidebar Says" code snippet to create the layout for the `feature__item` on the tablet design.
 - [Frontend Mentor | Responsive Multi-Page Website with Grid and Flexbox coding challenge solution](https://www.frontendmentor.io/solutions/responsive-multipage-website-with-grid-and-flexbox-MgG8IlyIbc) - This is my previous solution before this one. It helped me to create the hamburger menu. I would say that my past self help me create it. So, by the time I was building it for this challenge, most of it I did copy-paste from the previous solution.
@@ -544,7 +520,3 @@ See her profile — [Frontend Mentor | Grace's profile](https://www.frontendment
 ## License
 
 [MIT](./LICENSE)
-
-## References
-
-See the [documentation](./docs/README.md).
