@@ -1141,6 +1141,10 @@ a {
   }
 }
 
+.locations__container picture.is-hidden {
+  visibility: hidden;
+}
+
 @media screen and (min-width: 59.375em) {
   .locations__container--row-reverse\@very-small {
     flex-direction: row-reverse;

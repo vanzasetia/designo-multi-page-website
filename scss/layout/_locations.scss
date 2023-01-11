@@ -25,6 +25,10 @@
   }
 }
 
+.locations__container picture.is-hidden {
+  visibility: hidden;
+}
+
 .locations__container--row-reverse\@very-small {
   @include breakpoint-up("very-small") {
     flex-direction: row-reverse;

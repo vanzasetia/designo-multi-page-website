@@ -12,7 +12,10 @@
       document.documentElement.className = "js";
     </script>
     <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/leaflet.min.css" />
+    <script src="/js/vendors/leaflet.min.js" defer></script>
     <script src="/js/app.min.js" defer></script>
+    <script src="/js/map.min.js" defer></script>
     <script src="/js/vendors/inert-polyfill.min.js" defer></script>
     <script
       src="https://analytics.umami.is/script.js"
@@ -125,24 +128,26 @@
           <div
             class="locations__container locations__container--row-reverse@very-small"
           >
-            <picture>
-              <source
-                srcset="/images/locations/desktop/image-map-canada.png"
-                media="(min-width: 59.375em)"
-              />
-              <source
-                srcset="/images/locations/tablet/image-map-canada.png"
-                media="(min-width: 42.5em)"
-              />
-              <img
-                src="/images/locations/desktop/image-map-canada.png"
-                alt=""
-                class="card card--rounded@tiny locations__map"
-                width="375"
-                height="320"
-                aria-hidden="true"
-              />
-            </picture>
+            <div id="js-map-canada" class="js-map">
+              <picture>
+                <source
+                  srcset="/images/locations/desktop/image-map-canada.png"
+                  media="(min-width: 59.375em)"
+                />
+                <source
+                  srcset="/images/locations/tablet/image-map-canada.png"
+                  media="(min-width: 42.5em)"
+                />
+                <img
+                  src="/images/locations/desktop/image-map-canada.png"
+                  alt=""
+                  class="card card--rounded@tiny locations__map"
+                  width="375"
+                  height="320"
+                  aria-hidden="true"
+                />
+              </picture>
+            </div>
             <div
               class="card card--rounded@tiny card--light-grayish-peach locations__card"
             >
@@ -160,24 +165,26 @@
             </div>
           </div>
           <div class="locations__container">
-            <picture>
-              <source
-                srcset="/images/locations/desktop/image-map-uk.png"
-                media="(min-width: 59.375em)"
-              />
-              <source
-                srcset="/images/locations/tablet/image-map-uk.png"
-                media="(min-width: 42.5em)"
-              />
-              <img
-                src="/images/locations/desktop/image-map-uk.png"
-                alt=""
-                class="card card--rounded@tiny locations__map"
-                width="375"
-                height="320"
-                aria-hidden="true"
-              />
-            </picture>
+            <div id="js-map-australia" class="js-map">
+              <picture>
+                <source
+                  srcset="/images/locations/desktop/image-map-australia.png"
+                  media="(min-width: 59.375em)"
+                />
+                <source
+                  srcset="/images/locations/tablet/image-map-australia.png"
+                  media="(min-width: 42.5em)"
+                />
+                <img
+                  src="/images/locations/desktop/image-map-australia.png"
+                  alt=""
+                  class="card card--rounded@tiny locations__map"
+                  width="375"
+                  height="320"
+                  aria-hidden="true"
+                />
+              </picture>
+            </div>
             <div
               class="card card--rounded@tiny card--light-grayish-peach locations__card"
             >
@@ -197,24 +204,26 @@
           <div
             class="locations__container locations__container--row-reverse@very-small"
           >
-            <picture>
-              <source
-                srcset="/images/locations/desktop/image-map-australia.png"
-                media="(min-width: 59.375em)"
-              />
-              <source
-                srcset="/images/locations/tablet/image-map-australia.png"
-                media="(min-width: 42.5em)"
-              />
-              <img
-                src="/images/locations/desktop/image-map-australia.png"
-                alt=""
-                class="card card--rounded@tiny locations__map"
-                width="375"
-                height="320"
-                aria-hidden="true"
-              />
-            </picture>
+            <div id="js-map-uk" class="js-map">
+              <picture>
+                <source
+                  srcset="/images/locations/desktop/image-map-uk.png"
+                  media="(min-width: 59.375em)"
+                />
+                <source
+                  srcset="/images/locations/tablet/image-map-uk.png"
+                  media="(min-width: 42.5em)"
+                />
+                <img
+                  src="/images/locations/desktop/image-map-uk.png"
+                  alt=""
+                  class="card card--rounded@tiny locations__map"
+                  width="375"
+                  height="320"
+                  aria-hidden="true"
+                />
+              </picture>
+            </div>
             <div
               class="card card--rounded@tiny card--light-grayish-peach locations__card"
             >

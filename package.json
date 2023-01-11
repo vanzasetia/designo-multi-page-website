@@ -9,16 +9,17 @@
 
     "validate:html": "html-validate ./*.html",
     "prettier": "prettier --write .",
-    "semistandard:js": "semistandard --fix js/app.js",
+    "semistandard:js": "semistandard --fix js/app.js js/map.js",
     "sort:scss": "postcss ./scss/ --replace --config package.json",
     "lint:scss": "stylelint \"**/*.scss\" --config ./.stylelintrc.json --fix",
     "lint": "npm-run-all validate:html sort:scss lint:scss semistandard:js prettier",
 
     "compile:sass": "sass scss/main.scss css/style.css --no-source-map",
     "build:css": "postcss ./css/style.css -o ./css/style.min.css --use autoprefixer cssnano --no-map",
-    "build:js": "terser ./js/app.js --output ./js/app.min.js --compress --mangle",
-    "purify:css": "purifycss ./css/style.min.css ./index.html ./web-design.html ./app-design.html ./graphic-design.html ./about.html ./locations.html ./contact.html ./js/app.js --min --out ./css/style.min.css --info",
-    "ready": "npm-run-all validate:html sort:scss lint:scss compile:sass build:css purify:css semistandard:js prettier build:js"
+    "build:appjs": "terser ./js/app.js --output ./js/app.min.js --compress --mangle",
+    "build:mapjs": "terser ./js/map.js --output ./js/map.min.js --compress --mangle reserved=['L']",
+    "purify:css": "purifycss ./css/style.min.css ./index.html ./web-design.html ./app-design.html ./graphic-design.html ./about.html ./locations.html ./contact.html ./js/app.js ./js/map.js --min --out ./css/style.min.css --info",
+    "ready": "npm-run-all validate:html sort:scss lint:scss compile:sass build:css purify:css semistandard:js prettier build:appjs build:mapjs"
   },
   "postcss": {
     "syntax": "postcss-scss",
@@ -35,7 +36,8 @@
   "semistandard": {
     "globals": [
       "localStorage",
-      "matchMedia"
+      "matchMedia",
+      "L"
     ]
   },
   "author": "",
