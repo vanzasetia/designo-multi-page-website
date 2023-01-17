@@ -12,9 +12,15 @@
   }
 }
 
+/**
+ * 1. Move the interactive map below the
+ *    mobile navigation.
+ */
 .locations__container {
   display: flex;
+  position: relative; /* 1 */
   flex-direction: column;
+  z-index: -1; /* 1 */
 
   @include breakpoint-up("tiny") {
     gap: rem(30);
