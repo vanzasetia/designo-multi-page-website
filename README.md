@@ -506,10 +506,7 @@ After that, if the users on the location page with JavaScript enabled, they get 
 
 ## Author
 
-- Frontend Mentor - [@vanzasetia](https://frontendmentor.io/profile/vanzasetia)
-- Twitter - [@vanzasetia](https://twitter.com/vanzasetia)
-- Code Newbie - [@vanzasetia](https://community.codenewbie.org/vanzasetia)
-- Want to see me on other platforms? [Check my linktree!](https://linktr.ee/vanzasetia)
+Frontend Mentor - [@vanzasetia](https://frontendmentor.io/profile/vanzasetia)
 
 ## Acknowledgements
 
