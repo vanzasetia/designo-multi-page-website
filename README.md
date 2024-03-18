@@ -6,6 +6,12 @@ I did this project to sharpen my HTML and CSS skills. It was the first time I cr
 
 Now about this `README`, I wrote everything starting from tools that I used, useful articles, what I had learned, and much more.
 
+## Disclaimer
+
+This project is solely for learning purposes. I take no any responsibility or liability for the accuracy, completeness, or usefulness of any information provided in this project. You should not use it as a reference for creating your project.
+
+I am currently no longer working on this project.
+
 ## The challenge
 
 My challenge is to build out this multi-page website and get it looking as close to the design as possible.
@@ -516,4 +522,4 @@ See her profile — [Frontend Mentor | Grace's profile](https://www.frontendment
 
 ## License
 
-[MIT](./LICENSE)
+[The Unlicense](./UNLICENSE)

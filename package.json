@@ -1,5 +1,7 @@
 {
   "name": "my-project",
+  "license": "CC0-1.0",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -40,7 +42,6 @@
       "L"
     ]
   },
-  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.8",
     "browser-sync": "^2.27.10",
