@@ -40,7 +40,6 @@
       "L"
     ]
   },
-  "author": "",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.8",
